@@ -1,26 +1,10 @@
 body {
-  background-color: #fff;
-  color: #555;
-  font-family: -apple-system, BlinkMacSystemFont, "Avenir Next", "Avenir",
-    "Segoe UI", "Lucida Grande", "Helvetica Neue", "Helvetica", "Fira Sans",
-    "Roboto", "Noto", "Droid Sans", "Cantarell", "Oxygen", "Ubuntu",
-    "Franklin Gothic Medium", "Century Gothic", "Liberation Sans", sans-serif;
-  padding: 1vh 2rem;
-  float: left;
+  background-color: #f6f6f6;
+  text-align: center;
 }
 
 .main-title {
-  font-size: 6em;
-  background: #fabada;
   width: auto;
-  float: left;
-  color: #fff;
-  margin: 1em 0 0 0;
-}
-
-.sub-title {
-  font-size: 6em;
-  font-weight: bold;
-  width: 100%;
-  float: left;
+  margin: 0 auto;
+  float: none;
 }
