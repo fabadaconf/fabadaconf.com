@@ -4,6 +4,7 @@
 
 **Always work in progress**.
 
-## Contributing
+----------------------------
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/fabadaconf/fabadaconf.github.io. This project is intended to be a safe, welcoming space for collaboration, and contributors are expected to adhere to the [Contributor Covenant](https://contributor-covenant.org) code of conduct.
+Este proyecto forma parte de la organización [fabadaconf](https://github.com/fabadaconf).
+Esto significa que cumple con los [core values](https://github.com/fabadaconf/base/blob/master/files/VALUES.md), el [código de conducta](https://github.com/fabadaconf/base/blob/master/files/CODE_OF_CONDUCT.md), y usa una [licencia](https://github.com/fabadaconf/base/blob/master/files/LICENSE) equivalente.
