@@ -108,7 +108,7 @@ function initSliders() {
     autoplayDisableOnInteraction: false,
   });
 
-  var speakersSwiper = new Swiper('#speakers-slider', {
+  var speakersSwiper = new Swiper('#ponentes-slider', {
     direction: 'horizontal',
 
     slidesPerView: 4,
@@ -121,7 +121,7 @@ function initSliders() {
     autoplayDisableOnInteraction: false,
   });
 
-  var planSwiper = new Swiper('#plan-slider', {
+  var planSwiper = new Swiper('#agenda-slider', {
     direction: 'horizontal',
     pagination: '.swiper-pages',
     paginationClickable: true,
@@ -133,7 +133,7 @@ function initSliders() {
   $(window).on('resize', function() {
     var ww = $(window).width();
 
-    if ($('#speakers-slider').length) {
+    if ($('#ponentes-slider').length) {
 
       if (ww > 1000) {
         speakersSwiper.params.slidesPerView = 4;
