@@ -370,9 +370,13 @@ nav.navbar {
     display: block;
     position: absolute;
     z-index: 1001;
-    font-size: 30px;
+    font-size: 28px;
     font-weight: bold;
     margin-top: 6px;
+
+    &:hover {
+      color: #fff;
+    }
   }
   .navbar-toggle {
     background-color: transparent;
@@ -562,7 +566,7 @@ nav.navbar {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: 50% 50%;
-  height: 844px;
+  height: 600px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -576,7 +580,7 @@ nav.navbar {
     font-weight: 600;
     font-size: 70px;
     line-height: 1.1em;
-    margin: 195px 0 0 0;
+    margin: 10px 0 0 0;
     span {
       color: #fff;
     }
@@ -592,7 +596,7 @@ nav.navbar {
     margin-top: 75px;
   }
   .calendar {
-    margin: 10px 0 0 0;
+    margin: 0;
     .day {
       font-family: 'Open Sans', sans-serif;
       display: block;
@@ -813,7 +817,7 @@ nav.navbar {
     margin: 0 auto;
   }
   .map-marker {
-    margin: 50px 0;
+    margin: 50px 0 0 0;
     display: inline-block;
 
     &:hover {
@@ -1247,7 +1251,7 @@ nav.navbar {
 
 footer {
   background: #ca0f6d;
-  color: #fabada;
+  color: #fff;
   text-align: left;
   padding: 27px 0 27px;
   overflow-y: hidden;
@@ -1310,7 +1314,7 @@ footer {
     width: 20px;
     height: 20px;
     line-height: 25px;
-    font-size: 14px;
+    font-size: 24px;
     transition: color 0.5s ease;
     &:hover {
       color: #ca0f6d;
