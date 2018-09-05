@@ -1245,6 +1245,10 @@ nav.navbar {
 
 #location{
   margin-top: 5%;
+
+  a:hover {
+    color: #ca0f6d;
+  }
 }
 
 @media (max-width: 991px) {
