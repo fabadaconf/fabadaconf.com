@@ -4,21 +4,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-
     <meta name="description" content="Conferencia sobre desarrollo de software en Gijón">
     <meta name="author" content="FabadaConf">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 
     <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
     <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
 
     <title><%= current_page.data.title %></title>
 
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+
     <%= stylesheet_link_tag "bootstrap-grid" %>
     <%= stylesheet_link_tag "font-awesome" %>
     <%= stylesheet_link_tag "zoomslider" %>
@@ -28,43 +28,9 @@
   </head>
 
   <body data-spy="scroll" data-offset="120" data-target="#navbar">
-    <nav class="navbar navbar-fixed-top" id="nav-wrapper">
-      <div class="container">
-        <div class="navbar-header">
-          <button type="button" class="navbar-toggle collapsed">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
-          <a class="logo" href="/"> FabadaConf </a>
-        </div>
-        <div id="navbar" class="navbar-collapse collapse">
-          <button type="button" class="navbar-toggle collapsed">
-            <span class="sr-only">Toggle navigation</span>
-            <span class="icon-bar top-bar"></span>
-            <span class="icon-bar middle-bar"></span>
-            <span class="icon-bar bottom-bar"></span>
-          </button>
-          <ul class="nav navbar-nav">
-            <li><a href="#about">About</a></li>
-            <li><a href="#ponentes">Nuestros Ponentes</a></li>
-            <li><a href="#tickets">Tickets</a></li>
-            <li><a href="#sponsors">Sponsors</a></li>
-            <li><a href="#suscribete">Suscríbete</a></li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-
+    <%= partial "partials/navbar" %>
     <%= yield %>
-
-    <footer>
-      <div class="container">
-        2018 © FabadaConf
-        <a href="#" class="go-top fa fa-angle-up hidden-xs hidden-ms"></a>
-      </div>
-    </footer>
+    <%= partial "partials/footer" %>
 
     <%= javascript_include_tag "modernizr.min" %>
     <%= javascript_include_tag "jquery.min" %>
