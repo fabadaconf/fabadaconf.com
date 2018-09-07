@@ -57,6 +57,7 @@ abbr[title] {
 b,
 strong {
   font-weight: bold;
+  color: #ca0f6d;
 }
 
 dfn {
@@ -1094,7 +1095,7 @@ nav.navbar {
 
 @media (max-width: 768px) {
   #tickets {
-    padding-bottom: 10px;
+    padding-bottom: 60px;
     .price-tabs .item {
       .price {
         font-size: 36px;
@@ -1243,11 +1244,31 @@ nav.navbar {
   }
 }
 
-#location{
+#location,
+#code-of-conduct {
   margin-top: 5%;
 
   a:hover {
     color: #ca0f6d;
+  }
+}
+
+#organizers{
+  margin-top: 5%;
+
+  h5 {
+    margin-bottom: 24px;
+  }
+  .name {
+    font-weight: 800;
+    margin-top: 20px;
+    line-height: 1em;
+    color: #ca0f6d;
+  }
+  .row {
+    .social {
+      margin-bottom: 24px;
+    }
   }
 }
 
