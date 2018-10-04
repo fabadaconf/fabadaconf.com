@@ -98,7 +98,7 @@ function initSliders() {
   var sponsorsSwiper = new Swiper('#sponsors-slider', {
     direction: 'horizontal',
 
-    slidesPerView: 5,
+    slidesPerView: 3,
 
     speed: 1000,
     nextButton: '.arrow-right',
@@ -150,7 +150,7 @@ function initSliders() {
 
     if ($('#sponsors-slider').length) {
       if (ww > 1000) {
-        sponsorsSwiper.params.slidesPerView = 5;
+        sponsorsSwiper.params.slidesPerView = 4;
       }
       if (ww > 768 && ww <= 1000) {
         sponsorsSwiper.params.slidesPerView = 3;
