@@ -817,6 +817,16 @@ nav.navbar {
     width: 80%;
     margin: 0 auto;
   }
+  a {
+    color: #ca0f6d;
+    font-weight: 700;
+    text-decoration: underline;
+
+    &:hover {
+      color: #ca0f6d;
+      text-decoration: none;
+    }
+  }
   .map-marker {
     margin: 50px 0 0 0;
     display: inline-block;
@@ -875,7 +885,8 @@ nav.navbar {
 }
 
 #ponentes,
-#organizadores {
+#organizadores,
+#como-llegar {
   background-color: #F4F4F4;
   background-position: 100% 50%;
   background-repeat: no-repeat;
@@ -911,9 +922,26 @@ nav.navbar {
   }
 }
 
+#como-llegar {
+  a {
+    color: #ca0f6d;
+    font-weight: 700;
+    text-decoration: underline;
+
+    &:hover {
+      color: #ca0f6d;
+      text-decoration: none;
+    }
+  }
+  .location-map {
+    text-align: center;
+  }
+}
+
 @media (max-width: 991px) {
   #ponentes,
-  #organizadores {
+  #organizadores,
+  #como-llegar {
     padding: 45px 0 5px;
   }
 }
@@ -1249,25 +1277,6 @@ nav.navbar {
 
   a:hover {
     color: #ca0f6d;
-  }
-}
-
-#organizers{
-  margin-top: 5%;
-
-  h5 {
-    margin-bottom: 24px;
-  }
-  .name {
-    font-weight: 800;
-    margin-top: 20px;
-    line-height: 1em;
-    color: #ca0f6d;
-  }
-  .row {
-    .social {
-      margin-bottom: 24px;
-    }
   }
 }
 
