@@ -1292,7 +1292,6 @@ footer {
   text-align: left;
   padding: 27px 0 27px;
   overflow-y: hidden;
-  height: 80px;
   div {
     font-size: 14px;
   }
@@ -1326,6 +1325,22 @@ footer {
     &:hover:before {
       background: #fff;
       color: #556372;
+    }
+  }
+  .icons {
+    display: unset;
+    li {
+      list-style-type: none;
+      float: left;
+      margin-right: 16px;
+      font-size: 22px;
+
+      a {
+        color: #fff;
+        &:hover {
+          color: #fff;
+        }
+      }
     }
   }
 }
