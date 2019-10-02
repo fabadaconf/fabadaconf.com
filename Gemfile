@@ -1,8 +1,19 @@
 source 'https://rubygems.org'
 
-gem 'middleman', '~> 4.2'
-gem 'middleman-autoprefixer', '~> 2.7'
-gem "middleman-livereload", '~> 3.4.3'
+gem 'wdm', '~> 0.1.1', platforms: [:mswin, :mingw]
+
 gem 'tzinfo-data', platforms: [:mswin, :mingw, :jruby]
-gem 'wdm', '~> 0.1', platforms: [:mswin, :mingw]
+
+gem 'middleman-livereload'
+gem 'middleman', '~> 4.3'
+gem 'middleman-blog', '~> 4.0'
+gem 'middleman-sprockets', '~> 4.1.0'
+gem 'middleman-autoprefixer', '~> 2.10'
+gem 'sass-rails'
+
+gem 'builder', '~> 3.2.3'
+
+gem 'middleman-syntax', '~> 3.0.0'
+gem 'redcarpet', '~> 3.4.0'
+
 gem 'middleman-gh-pages'
