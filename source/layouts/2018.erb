@@ -22,16 +22,15 @@
 
     <title><%= current_page.data.title %></title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
-
     <%= stylesheet_link_tag "site" %>
   </head>
 
-  <body data-spy="scroll" data-offset="120" data-target="#navbar">
-    <%= partial "./2018/partials/navbar" %>
-    <%= yield %>
-    <%= partial "./2018/partials/footer" %>
-
+  <body>
+    <div class="container">
+      <%= partial "./2018/partials/navbar" %>
+      <%= yield %>
+      <%= partial "./2018/partials/footer" %>
+    </div>
     <%= javascript_include_tag "site" %>
   </body>
 </html>
