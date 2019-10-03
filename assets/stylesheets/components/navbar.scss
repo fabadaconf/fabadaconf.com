@@ -1,0 +1,18 @@
+.navbar {
+  color: $black;
+
+  .navbar-menu {
+    .navbar-start {
+      background-color: $yellow;
+
+      .navbar-item {
+        font-weight: bold;
+        border-left: 2px solid $black;
+
+        &:last-child {
+          border-right: 2px solid $black;
+        }
+      }
+    }
+  }
+}
