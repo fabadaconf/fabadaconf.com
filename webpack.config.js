@@ -11,8 +11,12 @@ const plugins = [
   }),
   new CopyWebpackPlugin([
     {
-      from: path.join(__dirname, 'assets/images'),
+      from: path.join(source_path, 'images'),
       to: path.join(__dirname, '.tmp', 'dist', 'images'),
+    },
+    {
+      from: path.join(source_path, 'fonts'),
+      to: path.join(__dirname, '.tmp', 'dist', 'fonts'),
     },
   ]),
 ];
@@ -48,10 +52,10 @@ module.exports = {
   },
   resolve: {
     modules: [
-      path.resolve(__dirname, '/assets'),
+      source_path,
       path.resolve(__dirname, '/node_modules'),
     ],
-    extensions: ['.js, .scss, .sass, .css'],
+    extensions: ['.js, .scss, .sass, .css, .woff, .woff2'],
   },
   module: {
     rules: [
@@ -76,6 +80,18 @@ module.exports = {
             },
           ],
         }),
+      },
+      {
+        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]',
+              outputPath: '/',
+            },
+          },
+        ],
       },
     ],
   },
