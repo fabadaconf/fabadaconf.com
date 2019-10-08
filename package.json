@@ -38,6 +38,7 @@
     "webpack-dev-server": "^3.8.1"
   },
   "dependencies": {
-    "bulma": "^0.7.5"
+    "bulma": "^0.7.5",
+    "countdown": "2.6.0"
   }
 }

@@ -1,0 +1,19 @@
+body {
+  font-family: 'Documan Medium';
+  font-size: 16px;
+  color: $black;
+
+  .input {
+    font-family: 'Documan Medium';
+    font-size: 16px;
+    color: $black;
+    box-shadow: none;
+
+    &:active,
+    &:focus,
+    &:hover,
+    &:visited  {
+      box-shadow: none;
+    }
+  }
+}

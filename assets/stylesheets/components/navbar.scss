@@ -1,5 +1,20 @@
 .navbar {
   color: $black;
+  padding-top: 24px;
+
+  .navbar-brand {
+    .navbar-item {
+      width: 130px;
+      line-height: 1em;
+      font-weight: bold;
+      font-size: 18px;
+
+      &:hover {
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+  }
 
   .navbar-menu {
     .navbar-start {
@@ -11,6 +26,11 @@
 
         &:last-child {
           border-right: 2px solid $black;
+        }
+        &:hover {
+          color: $black;
+          background-color: $yellow;
+          text-decoration: underline;
         }
       }
     }

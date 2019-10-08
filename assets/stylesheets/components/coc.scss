@@ -1,0 +1,21 @@
+.coc {
+  margin-top: 48px;
+
+  h2 {
+    font-weight: bold;
+  }
+
+  > .column {
+    padding-top: 24px;
+    border-top: 2px solid $black;
+  }
+
+  a {
+    color: $black;
+    text-decoration: underline;
+
+    &:hover {
+      color: $black;
+    }
+  }
+}

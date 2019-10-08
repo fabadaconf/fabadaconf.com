@@ -1,0 +1,15 @@
+.count-down {
+  background-color: $black;
+  border-top: solid 8px $pink;
+  margin-top: 48px;
+
+  .days {
+    text-align: center;
+    font-weight: bold;
+    color: $white;
+
+    strong {
+      color: $white;
+    }
+  }
+}

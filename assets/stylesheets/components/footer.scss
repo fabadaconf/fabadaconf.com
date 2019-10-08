@@ -1,0 +1,15 @@
+footer {
+  margin-top: 36px;
+  padding-top: 24px;
+  border-top: 1px solid $black;
+  text-align: right;
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $black;
+      text-decoration: underline;
+    }
+  }
+}

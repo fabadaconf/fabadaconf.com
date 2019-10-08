@@ -17,7 +17,7 @@ const plugins = [
     {
       from: path.join(source_path, 'fonts'),
       to: path.join(__dirname, '.tmp', 'dist', 'fonts'),
-    },
+    }
   ]),
 ];
 
@@ -51,14 +51,19 @@ module.exports = {
     filename: 'javascripts/[name].js',
   },
   resolve: {
-    modules: [
-      source_path,
-      path.resolve(__dirname, '/node_modules'),
-    ],
+    modules: [source_path, '/node_modules'],
     extensions: ['.js, .scss, .sass, .css, .woff, .woff2'],
   },
   module: {
     rules: [
+      {
+        test: /\.js$/,
+        exclude: /node_modules/,
+        loader: 'babel-loader',
+        options: {
+          cacheDirectory: true,
+        },
+      },
       {
         test: /\.scss$/,
         exclude: [/node_modules/, /\.js$/],
@@ -80,19 +85,7 @@ module.exports = {
             },
           ],
         }),
-      },
-      {
-        test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,
-        use: [
-          {
-            loader: 'file-loader',
-            options: {
-              name: '[name].[ext]',
-              outputPath: '/',
-            },
-          },
-        ],
-      },
+      }
     ],
   },
 };

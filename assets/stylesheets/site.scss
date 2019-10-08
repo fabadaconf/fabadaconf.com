@@ -1,10 +1,19 @@
 @import 'bulma/bulma';
 
-@import "vars/colors";
-@import "vars/fonts";
+@import 'vars/colors';
+@import 'vars/fonts';
 
-@import "components/navbar";
+@import 'components/navbar';
+@import 'components/hero';
+@import 'components/countdown';
+@import 'components/about';
+@import 'components/conference_info';
+@import 'components/links';
+@import 'components/coc';
+@import 'components/slider';
+@import 'components/sponsors';
+@import 'components/organizers';
+@import 'components/subscribe';
+@import 'components/footer';
 
-body {
-  font-family: 'Documan';
-}
+@import 'base';

@@ -22,16 +22,20 @@
 
     <title><%= current_page.data.title %></title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
 
     <%= stylesheet_link_tag "site" %>
   </head>
 
-  <body data-spy="scroll" data-offset="120" data-target="#navbar">
-    <%= partial "partials/navbar" %>
-    <%= yield %>
-    <%= partial "partials/footer" %>
-
+  <body>
+    <div class="container">
+      <%= partial "partials/navbar" %>
+      <%= yield %>
+      <%= partial "partials/footer" %>
+    </div>
     <%= javascript_include_tag "site" %>
   </body>
 </html>

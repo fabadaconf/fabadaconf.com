@@ -1,0 +1,40 @@
+.organizers {
+  margin-top: 48px;
+
+  h2 {
+    font-weight: bold;
+  }
+
+  > .column {
+    padding-top: 24px;
+    border-top: 2px solid $black;
+  }
+
+  .organizer {
+    .organizer-content {
+      text-align: center;
+      border: 1px solid $black;
+      margin: 12px 0 12px 0;
+    }
+
+    .organizer-links {
+      border: 1px solid $black;
+      padding: 0px 0px 0px 8px;
+
+      &:hover {
+        background-color: $yellow;
+      }
+
+      a {
+        border-left: 1px solid $black;
+        float: right;
+        padding: 0 8px;
+        color: $black;
+
+        &:hover {
+          background-color: $pink;
+        }
+      }
+    }
+  }
+}

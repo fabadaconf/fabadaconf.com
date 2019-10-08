@@ -1,0 +1,46 @@
+.columns {
+  &.hero {
+    margin: 48px 0;
+
+    .title {
+      font-size: 96px;
+      font-weight: bold;
+      line-height: 1.13;
+    }
+  }
+
+  &.tickets {
+    margin: 20px 0 0 0;
+
+    .tickets-link {
+      color: $black;
+      font-size: 1.6em;
+      font-weight: bold;
+      text-align: center;
+      padding: 12px;
+      background-color: $green;
+      line-height: 1;
+      width: 154px;
+
+      &:hover {
+        color: $black;
+        text-decoration: underline;
+      }
+    }
+  }
+
+  &.date {
+    margin: 0;
+
+    .date-content {
+      color: $black;
+      font-size: 1.6em;
+      font-weight: bold;
+      text-align: center;
+      padding: 12px;
+      background-color: $blue;
+      line-height: 1;
+      width: 152px;
+    }
+  }
+}

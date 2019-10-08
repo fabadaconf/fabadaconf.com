@@ -1,0 +1,34 @@
+.sponsors {
+  margin-top: 48px;
+
+  h2 {
+    font-weight: bold;
+  }
+
+  > .column {
+    padding-top: 24px;
+    border-top: 2px solid $black;
+  }
+
+  .sponsor {
+
+    .sponsor-content {
+      text-align: center;
+      border: 1px solid $black;
+      margin: 12px 0 12px 0;
+      padding: 12px;
+
+      a {
+        color: $black;
+
+        &:hover {
+          color: $black;
+        }
+
+        img {
+          height: 150px;
+        }
+      }
+    }
+  }
+}
