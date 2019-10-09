@@ -1,0 +1,13 @@
+.links {
+  font-weight: bold;
+  line-height: 1.13;
+  margin-top: 48px;
+
+  a {
+    color: $black;
+
+    &:hover {
+      color: $pink;
+    }
+  }
+}

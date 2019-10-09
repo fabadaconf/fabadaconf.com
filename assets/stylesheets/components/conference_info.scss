@@ -1,0 +1,12 @@
+.conference-info {
+  margin-top: 48px;
+
+  h2 {
+    font-weight: bold;
+  }
+
+  > .column {
+    border-top: 2px solid $black;
+    padding-top: 24px;
+  }
+}

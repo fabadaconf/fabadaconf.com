@@ -1,0 +1,30 @@
+.subscribe {
+  color: $black;
+  font-weight: bold;
+  margin: 24px 0;
+
+  .column {
+    background-color: $pink;
+
+    .form {
+      border: 1px solid $black;
+
+      input[type='email'] {
+        background-color: $pink;
+        border: none;
+        width: 74%;
+      }
+
+      input[type='submit'] {
+        background-color: $pink;
+        border: none;
+        color: $black;
+        font-family: 'Documan';
+        height: 40px;
+        padding: 5px;
+        vertical-align: top;
+        width: 24%;
+      }
+    }
+  }
+}

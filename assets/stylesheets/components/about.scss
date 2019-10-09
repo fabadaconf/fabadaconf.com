@@ -1,0 +1,21 @@
+.about {
+  background-color: $yellow;
+  margin-top: 24px;
+  padding: 24px 0;
+
+  .column {
+    margin: 0px 48px;
+  }
+
+  .info {
+    letter-spacing: normal;
+    line-height: 1.33;
+
+    h2 {
+      font-weight: bold;
+      letter-spacing: normal;
+      line-height: 1.13;
+      margin-bottom: 24px;
+    }
+  }
+}
