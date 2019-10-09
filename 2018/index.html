@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Conferencia sobre desarrollo de software en Gijón">
     <meta name="author" content="FabadaConf">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#fabada">
+    <meta name="theme-color" content="#fabada">
 
     <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#fabada">
 
     <meta property="og:title" content="FabadaConf 2018" />
     <meta property="og:image" content="images/logo.png"/>
@@ -22,451 +22,332 @@
 
     <title>FabadaConf 2018</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
 
-    <link href="/stylesheets/bootstrap-grid.css" rel="stylesheet" />
-    <link href="/stylesheets/font-awesome.css" rel="stylesheet" />
-    <link href="/stylesheets/zoomslider.css" rel="stylesheet" />
-    <link href="/stylesheets/swiper.css" rel="stylesheet" />
-    <link href="/stylesheets/swipebox.css" rel="stylesheet" />
-    <link href="/stylesheets/styles.css" rel="stylesheet" />
+    <link href="/stylesheets/site.css" rel="stylesheet" />
   </head>
 
-  <body data-spy="scroll" data-offset="120" data-target="#navbar">
-    <nav class="navbar navbar-fixed-top" id="nav-wrapper">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar top-bar"></span>
-        <span class="icon-bar middle-bar"></span>
-        <span class="icon-bar bottom-bar"></span>
-      </button>
-      <a class="logo" href="/"> FabadaConf </a>
+  <body class="is-size-7">
+    <div class="container is-size-7">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" id="navbar-toggle" class="navbar-burger burger"
+       aria-label="menu" aria-expanded="false"
+       data-target="navbar-list">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbar-list" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item is-size-7" href="#about">About</a>
+      <a class="navbar-item is-size-7" href="#links">Enlaces</a>
+      <a class="navbar-item is-size-7" href="#coc">Código de Conducta</a>
+      <a class="navbar-item is-size-7" href="#sponsors">Sponsors</a>
+      <a class="navbar-item is-size-7" href="#organizers">Organizadores</a>
+      <a class="navbar-item is-size-7" href="#subscribe">Suscríbete</a>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <button type="button" class="navbar-toggle collapsed">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar top-bar"></span>
-        <span class="icon-bar middle-bar"></span>
-        <span class="icon-bar bottom-bar"></span>
-      </button>
-      <ul class="nav navbar-nav">
-        <li><a href="#about">About</a></li>
-        <li><a href="#ponentes">Nuestros Ponentes</a></li>
-        <li><a href="#agenda">Agenda</a></li>
-        <li><a href="#como-llegar">Cómo Llegar</a></li>
-        <li><a href="#sponsors">Sponsors</a></li>
-        <li><a href="#organizadores">Organizadores</a></li>
-        <li><a href="#suscribete">Suscríbete</a></li>
-      </ul>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <a class="navbar-item" href="/">
+          <img src="images/logo.png">
+        </a>
+      </div>
     </div>
   </div>
 </nav>
 
-    <section id="slider-full" class="slider-full" data-zs-bullets="false" data-zs-speed="14000" data-zs-interval="10000" data-zs-switchspeed="400" data-zs-src='["./images/slider/gijon.jpg","./images/slider/lalaboral.jpg","./images/slider/puerto.jpg"]' data-zs-overlay="false">
-  <div class="container">
-    <div class="content">
-      <div class="row">
-        <div class="col-md-2">
-          <div class="calendar">
-            <span class="day">10</span>
-            <span class="month">Nov. 2018</span>
-          </div>
-        </div>
-        <div class="col-md-10">
-          <h1> Conferencia de Software <span> en Gijón, Asturias</span></h1>
-        </div>
-      </div>
+      <div class="columns tickets">
+  <div class="column is-2 is-offset-10">
+    <a class="tickets-link is-pulled-right is-size-6"
+        href="https://ti.to/fabadaconf/2018" target="_blank">
+      ENTRADAS
+    </a>
+  </div>
+</div>
+
+<div class="columns hero">
+  <div class="column is-10 is-offset-1">
+    <h1 class="title is-size-0 is-size-3-mobile">
+      Conferencia de Software en Gijón, Asturias
+    </h1>
+  </div>
+</div>
+
+<div class="columns date">
+  <div class="column is-2">
+    <span class="date-content is-size-6">10.11.2018</a>
+  </div>
+</div>
+
+<div class="columns about" id="about">
+  <div class="column is-3">
+    <div class="info">
+      <h2 class="is-size-3">1 día</h2>
+
+      <p>Un solo día con un solo track donde establecer un punto de encuentro de la comunidad de software y comer fabada.</p>
     </div>
   </div>
-</section>
 
-<div class="time" id="time">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-12">
-        <div class="header">Tiempo Restante</div>
-        ¡Rápido, únete a la conferencia!
+  <div class="column is-3">
+    <div class="info">
+      <h2 class="is-size-3">5 ponentes</h2>
+
+      <p>Cinco ponentes invitados desde todos los puntos del país nos contarán sus experiencias y conocimientos.</p>
+    </div>
+  </div>
+
+  <div class="column is-3">
+    <div class="info">
+      <h2 class="is-size-3">100 plazas</h2>
+
+      <p>Solo cien tickets a la venta, de modo que si te interesa ¡corre y reserva el tuyo! Te estamos esperando.</p>
+    </div>
+  </div>
+</div>
+
+<div class="columns conference-info" id="conference-info">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+      <div class="column is-6">
+        <h2>Sobre la conferencia</h2>
       </div>
-      <div class="col-md-9 col-sm-12">
-        <div class="days clearfix" id="daysCountDown" data-date="2018/11/10">
-        </div>
+
+      <div class="column is-6">
+        <p>
+          FabadaConf es una conferencia sin ánimo de lucro en la que se pretende establecer un punto de encuentro para la comunidad de desarrollo de software, y promover el uso y aprendizaje de nuevas tecnologías.
+        </p>
       </div>
     </div>
   </div>
 </div>
 
-<section class="about" id="about">
-  <div class="container">
-    <h3>Sobre La Conferencia</h3>
-    <p><b>​FabadaConf</b> es una conferencia sin ánimo de lucro en la que se pretende establecer un <b>punto de encuentro</b> para la comunidad de <b>desarrollo de software</b>, y promover el uso y aprendizaje de <b>nuevas tecnologías</b>.</p>
-
-    <div class="row stat" id="countUp">
-      <div class="col-md-4 col-sm-4 col-ms-4">
-        <span class="number" id="countUp-1">1</span>
-        <span class="header">Día</span>
-        <p>1 solo día con 1 sólo track donde establecer un punto de encuentro de la comunidad de software ¡y comer fabada!</p>
-      </div>
-      <div class="col-md-4 col-sm-4 col-ms-4">
-        <span class="number" id="countUp-2">5</span>
-        <span class="header">Ponentes</span>
-        <p>5 ponentes invitados desde todos los puntos del país nos contarán sus experiencias y conocimientos</p>
-      </div>
-      <div class="col-md-4 col-sm-4 col-ms-4">
-        <span class="number" id="countUp-4">100</span>
-        <span class="header">Plazas</span>
-        <p>Sólo 100 tickets a la venta, de modo que si te interesa ¡corre y reserva el tuyo! Te estamos esperando</p>
-      </div>
-    </div>
-
-    <div id="code-of-conduct">
-      <h5>CÓDIGO DE CONDUCTA</h5>
-      <p>
-        Todas las actividades de <b>​FabadaConf</b> están sujetas a nuestro <a href="https://github.com/fabadaconf/base/blob/master/files/CODE_OF_CONDUCT.md" title="Código de Conducta">Código de Conducta</a>, de modo que no te olvides de leerlo.
-      </p>
-    </div>
+<div class="columns links" id="links">
+  <div class="column is-10 is-offset-1 is-size-0 is-size-3-mobile">
+    <a target="_blank" href="https://us19.campaign-archive.com/home/?u=b200b60a95f92088e1eca28c4&id=6fdd83df30">Newsletter</a>,
+    <a target="_blank" href="https://github.com/fabadaconf">Github</a>,
+    <a target="_blank" href="https://twitter.com/fabadaconf">Twitter</a>,
+    <a target="_blank" href="https://www.linkedin.com/company/fabadaconf">LinkedIn</a>,
+    <a target="_blank" href="https://www.youtube.com/channel/UCf--4bN4vA0MQqMnpWXPm8w">Youtube</a>,
+    <a target="_blank" href="mailto:fabadaconf@gmail.com">Email</a>.
   </div>
-</section>
+</div>
 
-<section class="speakers parallax" id="ponentes">
-  <h3>Nuestros Ponentes</h3>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5th-1 col-sm-4 col-md-offset-0 col-sm-offset-2">
-        <img src="images/ponentes/diana.jpeg" class="full-width" alt="Diana Aceves">
-        <div class="name">Diana Aceves</div>
-        <div class="descr">FrontEnd Developer</div>
-        <ul class="social">
-          <li><a href="https://twitter.com/diana_aceves_" class="fa fa-twitter"></a></li>
-        </ul>
+<div class="columns coc" id="coc">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+      <div class="column is-6">
+        <h2>Código de conducta</h2>
       </div>
-      <div class="col-md-5th-1 col-sm-4">
-        <img src="images/ponentes/oscar.jpg" class="full-width" alt="Óscar de Arriba">
-        <div class="name">Óscar de Arriba</div>
-        <div class="descr">DevOps & Software Developer</div>
-        <ul class="social">
-          <li><a href="https://twitter.com/odarriba" class="fa fa-twitter"></a></li>
-        </ul>
-      </div>
-      <div class="col-md-5th-1 col-sm-4">
-        <img src="images/ponentes/belen.png" class="full-width" alt="Belén Albeza">
-        <div class="name">Belén Albeza</div>
-        <div class="descr">Software Developer</div>
-        <ul class="social">
-          <li><a href="https://twitter.com/ladybenko" class="fa fa-twitter"></a></li>
-        </ul>
-      </div>
-      <div class="col-md-5th-1 col-sm-4">
-        <img src="images/ponentes/rodrigo.jpg" class="full-width" alt="Rodrigo Álvarez">
-        <div class="name">Rodrigo Álvarez</div>
-        <div class="descr">Software Developer</div>
-        <ul class="social">
-          <li><a href="https://twitter.com/Papipo" class="fa fa-twitter"></a></li>
-        </ul>
-      </div>
-      <div class="col-md-5th-1 col-sm-4">
-        <img src="images/ponentes/patricia.jpg" class="full-width" alt="Patricia Gao">
-        <div class="name">Patricia Gao</div>
-        <div class="descr">Technical Product Manager</div>
-        <ul class="social">
-          <li><a href="https://twitter.com/patriciagao" class="fa fa-twitter"></a></li>
-        </ul>
+
+      <div class="column is-6">
+        <p>
+          Todas las actividades de FabadaConf están sujetas a nuestro <a href="https://github.com/fabadaconf/base/blob/master/files/CODE_OF_CONDUCT.md" target="_blank">Código de Conducta</a>, de modo que no te olvides de leerlo.
+        </p>
       </div>
     </div>
   </div>
-</section>
+</div>
 
-<section class="agenda parallax" id="agenda">
-  <div class="container">
-    <h3>Agenda</h3>
-    <div id="agenda-slider">
-      <div class="items">
-        <div class="row item">
-          <div class="col-md-4 col-sm-4">
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 photo">
-                <img src="images/logo.png" class="full-width" alt="Org. FabadaConf">
-              </div>
-              <div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
-                <div class="date">8:30 AM - 09:10 AM</div>
-                <div class="name">Org. FabadaConf</div>
-              </div>
+<div class="columns slider">
+  <div class="column is-10 is-offset-1">
+    <img src="images/slider/gijon.jpg" alt="Gijón"/>
+  </div>
+</div>
+
+<div class="columns sponsors" id="sponsors">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+
+      <div class="column is-4">
+        <h2>Sponsors</h2>
+      </div>
+
+      <div class="column is-8">
+
+        <div class="columns">
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="AMR Informática" href="http://tienda.amr.es/" target="_blank">
+                <img src="images/2018/sponsors/amr.jpg" alt="AMR Informática">
+              </a>
             </div>
+            <p>AMR Informática</p>
           </div>
-          <div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
-          <div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
-            <h4>Check-in y bienvenida</h4>
-            <p>A las 8:30 AM abriremos puertas y comenzaremos a daros paso a la sala de la conferencia. A las 9:00 AM arrancará el evento con una pequeña presentación, comentando cómo va a discurrir el día y compartiendo otros detalles.</p>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Cabify" href="https://www.cabify.com/" target="_blank">
+                <img src="images/2018/sponsors/cabify.jpg" alt="Cabify">
+              </a>
+            </div>
+            <p>Cabify</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Bizneo HR" href="https://www.bizneo.com/" target="_blank">
+                <img src="images/2018/sponsors/bizneo.jpg" alt="Bizneo HR">
+              </a>
+            </div>
+            <p>Bizneo HR</p>
           </div>
         </div>
-        <div class="row item">
-          <div class="col-md-4 col-sm-4">
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 photo">
-                <img src="images/ponentes/diana.jpeg" class="full-width" alt="Diana Aceves">
-              </div>
-              <div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
-                <div class="date">9:10 AM - 10:00 AM</div>
-                <div class="name">Diana Aceves</div>
-                <div class="descr">FrontEnd Developer</div>
-              </div>
+
+        <div class="columns">
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Nextail" href="https://www.nextail.com/" target="_blank">
+                <img src="images/2018/sponsors/nextail.jpg" alt="Nextail">
+              </a>
             </div>
+            <p>Nextail</p>
           </div>
-          <div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
-          <div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
-            <h4>Grid y Flex: The new BFF</h4>
-            <p>Diana hará una demo en vivo del uso de Flexbox y Grid Layout juntos, para demostrar lo bien que se complementan y que, efectivamente, son los nuevos mejores amigos en el mundillo CSS.</p>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Empachate.com" href="https://www.empachate.com/" target="_blank">
+                <img src="images/2018/sponsors/empachate.jpg" alt="Empachate.com">
+              </a>
+            </div>
+            <p>Empachate.com</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Onirix" href="https://www.onirix.com/" target="_blank">
+                <img src="images/2018/sponsors/onirix.png" alt="Onirix">
+              </a>
+            </div>
+            <p>Onirix</p>
           </div>
         </div>
-        <div class="row item">
-          <div class="col-md-4 col-sm-4">
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 photo">
-                <img src="images/ponentes/patricia.jpg" class="full-width" alt="Patricia Gao">
-              </div>
-              <div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
-                <div class="date">10:00 AM - 10:50 AM</div>
-                <div class="name">Patricia Gao</div>
-                <div class="descr">Technical Product Manager</div>
-              </div>
+
+        <div class="columns">
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Academia Arión" href="https://www.facebook.com/arionacademiagijon/" target="_blank">
+                <img src="images/2018/sponsors/arion.png" alt="Academia Arión">
+              </a>
             </div>
-          </div>
-          <div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
-          <div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
-            <h4>Team Power-Ups: Where to find them</h4>
-            <p>Patricia viene a demostrarnos cómo todos los equipos tienen margen de mejora. El propósito de esta charla es compartir prácticas y consejos para poder hacer a tu equipo un grupo más feliz y productivo.</p>
-          </div>
-        </div>
-        <div class="row item">
-          <div class="col-md-4 col-sm-4">
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 photo">
-                <img src="images/ponentes/oscar.jpg" class="full-width" alt="Óscar de Arriba">
-              </div>
-              <div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
-                <div class="date">10:50 AM - 11:40 AM</div>
-                <div class="name">Óscar de Arriba</div>
-                <div class="descr">DevOps & Software Developer</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
-          <div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
-            <h4>Docker y Kubernetes: en busca de la alta disponibilidad</h4>
-            <p>Docker y Kubernetes son parte de muchas infraestructuras de hoy en día, pero ¿qué nos aportan? Exploraremos ambas tecnologías y cómo se adaptan cuando necesitamos escalabilidad y alta disponibilidad.</p>
-          </div>
-        </div>
-        <div class="row item">
-          <div class="col-md-4 col-sm-4">
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 photo">
-                <img src="images/logo.png" class="full-width" alt="Org. FabadaConf">
-              </div>
-              <div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
-                <div class="date">11:40 AM - 12:00 AM</div>
-                <div class="name">Org. FabadaConf</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
-          <div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
-            <h4>¡Parón para un café!</h4>
-            <p>Tras las primeras tres charlas, haremos un parón para tomar un café y poder hacer un poco de networking entre los asistentes a la conferencia.</p>
-          </div>
-        </div>
-        <div class="row item">
-          <div class="col-md-4 col-sm-4">
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 photo">
-                <img src="images/ponentes/rodrigo.jpg" class="full-width" alt="Rodrigo Álvarez">
-              </div>
-              <div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
-                <div class="date">12:00 AM - 12:50 PM</div>
-                <div class="name">Rodrigo Álvarez</div>
-                <div class="descr">Software Developer</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
-          <div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
-            <h4>TDD: Toxicity driven development</h4>
-            <p>¿Estamos en un gremio tóxico? ¿Hay demasiada venta de humo en el sector? ¿Por qué se le da tanta importancia al perfil de GitHub en los procesos de selección? ¿Ni michismi ni fiminismi? Rodrigo nos hará reflexionar sobre estos temas y muchos más.</p>
-          </div>
-        </div>
-        <div class="row item">
-          <div class="col-md-4 col-sm-4">
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 photo">
-                <img src="images/ponentes/belen.png" class="full-width" alt="Belén Albeza">
-              </div>
-              <div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
-                <div class="date">12:50 PM - 13:40 PM</div>
-                <div class="name">Belén Albeza</div>
-                <div class="descr">Software Developer</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
-          <div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
-            <h4>Mejorando como desarrolladores</h4>
-            <p>En esta charla veremos algunos consejos para aprender cómo podemos formarnos y mejorar como desarrolladores sin abandonar a nuestres amigues, aficiones... y nos ayudará a cuestionarnos creencias y mitos comunes en la industria del desarrollo software.</p>
-          </div>
-        </div>
-        <div class="row item">
-          <div class="col-md-4 col-sm-4">
-            <div class="row">
-              <div class="col-lg-3 col-md-4 col-sm-4 col-xs-3 photo">
-                <img src="images/logo.png" class="full-width" alt="Org. FabadaConf">
-              </div>
-              <div class="col-lg-9 col-md-8 col-sm-8 col-xs-9">
-                <div class="date">13:40 PM - 14:00 PM</div>
-                <div class="name">Org. FabadaConf</div>
-              </div>
-            </div>
-          </div>
-          <div class="col-md-1 col-sm-1 divider hidden-ms hidden-xs"></div>
-          <div class="col-md-7 col-sm-7 col-xs-9 col-lg-offset-0 col-md-offset-0 col-sm-offset-0 col-ms-offset-3  col-xs-offset-3 text">
-            <h4>Cierre y... ¡Fabada!</h4>
-            <p>A esta hora todes tendremos mucha hambre, de modo que haremos un pequeño cierre de conferencia, y con la mente bien alimentada de conocimientos, iremos a alimentar el estómago con una buena fabada como fin de fiesta.</p>
+            <p>Academia Arión</p>
           </div>
         </div>
       </div>
+
     </div>
   </div>
-</section>
+</div>
 
-<section id="como-llegar">
-  <h3>Cómo Llegar</h3>
-  <div class="container">
-    <div class="row">
-      <p>
-        <b>FabadaConf</b> tendrá lugar en el <a title="Laboral Ciudad de la Cultura" href="https://www.google.es/maps/place/Laboral+Ciudad+de+la+Cultura/@43.524149,-5.616218,571m/data=!3m2!1e3!4b1!4m5!3m4!1s0xd367b19f0ba38f3:0x628d75f83f270b3a!8m2!3d43.524149!4d-5.614024" target="_blank">Paraninfo de Laboral Ciudad de la Cultura</a>. Aquí te dejamos un mapa donde puedes ver la localización exacta del edificio. Si vienes desde fuera de Gijón, te recomendamos que consultes <a href="http://www.laboralciudaddelacultura.com/6/informacin/12/cmo-llegar.html" title="¿Cómo llegar a Laboral Ciudad de la Cultura?" target="_blank">esta guía de Laboral Ciudad de la Cultura</a>, en donde explican cómo llegar a la misma haciendo uso de cualquiera de los medios de transporte disponibles en la ciudad.
-      </p>
-      <p class="location-map">
-        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2892.9371380303924!2d-5.617324783293888!3d43.524503579125664!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd367b1a2f5e24d1%3A0x36b266229a6db820!2sUniversidad+Laboral!5e0!3m2!1ses!2ses!4v1541501683241" width="800" height="600" frameborder="0" style="border:0; margin:48px auto;" allowfullscreen></iframe>
-      </p>
-    </div>
-  </div>
-</section>
+<div class="columns organizers" id="organizers">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
 
-<section id="sponsors">
-  <div class="container">
-    <h3>Sponsors</h3>
-    <div class="swiper-container items row" id="sponsors-slider">
-      <div class="swiper-wrapper">
-        <div class="col-md-2 col-sm-3 col-ms-6 col-xs-12 swiper-slide">
-          <a title="AMR Informática" href="http://tienda.amr.es/" target="_blank"><img src="images/sponsors/amr.jpg" alt="AMR Informática"></a>
-        </div>
-        <div class="col-md-2 col-sm-3 col-ms-6 col-xs-12 swiper-slide">
-          <a title="Cabify" href="https://cabify.com/es" target="_blank"><img src="images/sponsors/cabify.jpg" alt="Cabify"></a>
-        </div>
-        <div class="col-md-2 col-sm-3 col-ms-6 col-xs-12 swiper-slide">
-          <a title="Bizneo" href="https://www.bizneo.com/" target="_blank"><img src="images/sponsors/bizneo.jpg" alt="Bizneo"></a>
-        </div>
-        <div class="col-md-2 col-sm-3 col-ms-6 col-xs-12 swiper-slide">
-          <a title="Nextail" href="http://nextail.co/" target="_blank"><img src="images/sponsors/nextail.jpg" alt="Nextail"></a>
-        </div>
-        <div class="col-md-2 col-sm-3 col-ms-6 col-xs-12 swiper-slide">
-          <a title="Empáchate.com" href="https://www.empachate.com/" target="_blank"><img src="images/sponsors/empachate.jpg" alt="Empáchate.com"></a>
-        </div>
-        <div class="col-md-2 col-sm-3 col-ms-6 col-xs-12 swiper-slide">
-          <a title="Academia Arión" href="https://www.facebook.com/arionacademiagijon/" target="_blank"><img src="images/sponsors/arion.png" alt="Academia Arión"></a>
-        </div>
-        <div class="col-md-2 col-sm-3 col-ms-6 col-xs-12 swiper-slide">
-          <a title="Onirix" href="https://www.onirix.com/" target="_blank"><img src="images/sponsors/onirix.png" alt="Onirix"></a>
-        </div>
+      <div class="column is-4">
+        <h2>Organizadores</h2>
       </div>
-      <a href="#" class="arrow-left fa fa-chevron-left"></a>
-      <a href="#" class="arrow-right fa fa-chevron-right"></a>
-    </div>
-  </div>
-</section>
 
-<section class="organizers parallax" id="organizadores">
-  <h3>Organizadores</h3>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5th-1 col-sm-4 col-md-offset-2 col-sm-offset-0">
-        <img src="images/organizadores/martamedio.jpg" class="full-width" alt="Marta Medio">
-        <div class="name">Marta Medio</div>
-        <div class="descr">Software Developer</div>
-        <ul class="social">
-          <li><a href="https://twitter.com/tpdeoro" class="fa fa-twitter"></a></li>
-          <li><a href="https://www.linkedin.com/in/martamedio/" class="fa fa-linkedin"></a></li>
-        </ul>
-      </div>
-      <div class="col-md-5th-1 col-sm-4">
-        <img src="images/organizadores/ivangonzalez.jpg" class="full-width" alt="Iván González">
-        <div class="name">Iván González</div>
-        <div class="descr">Software Developer</div>
-        <ul class="social">
-          <li><a href="https://twitter.com/dreamingechoes" class="fa fa-twitter"></a></li>
-          <li><a href="https://www.linkedin.com/in/ivangonzalezsaiz/" class="fa fa-linkedin"></a></li>
-        </ul>
-      </div>
-      <div class="col-md-5th-1 col-sm-4">
-        <img src="images/organizadores/marinavega.jpg" class="full-width" alt="Marina Vega">
-        <div class="name">Marina Vega</div>
-        <div class="descr">Software Developer</div>
-        <ul class="social">
-          <li><a href="https://twitter.com/buenapava" class="fa fa-twitter"></a></li>
-          <li><a href="https://www.linkedin.com/in/marina-vega/" class="fa fa-linkedin"></a></li>
-        </ul>
-      </div>
-    </div>
+      <div class="column is-8">
+        <div class="columns">
+          <div class="column is-4 organizer">
+            <div class="organizer-content">
+              <a title="Marta Medio" href="https://www.linkedin.com/in/martamedio" target="_blank">
+                <img src="images/organizers/Fabada-Conf-Marta.jpg" alt="Marta Medio">
+              </a>
+            </div>
+            <div class="organizer-links">
+              <span class="is-size-8">Marta Medio</span>
 
-    <div class="row">
-      <h5>COLABORAN</h5>
-      <br>
-      <div class="col-md-5th-1 col-sm-4 col-md-offset-2 col-sm-offset-0">
-        <a title="Oruba.es" href="https://www.oruba.es/" target="_blank">
-         <img src="images/colaboradores/oruba.png" class="full-width" alt="Oruba">
-        </a>
-      </div>
-      <div class="col-md-5th-1 col-sm-4">
-        <a title="Folks Who Code" href="https://github.com/folkswhocode/" target="_blank">
-          <img src="images/colaboradores/fwc.svg" class="full-width" alt="Folks Who Code">
-        </a>
-      </div>
-    </div>
-  </div>
-</section>
-
-
-<section id="suscribete">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <h4>¿Quieres enterarte de todo?</h4>
-        ¡Suscríbete a nuestra newsletter para estar al día!
-      </div>
-      <div class="col-md-6 col-sm-12">
-        <form action="https://fabadaconf.us19.list-manage.com/subscribe/post?u=b200b60a95f92088e1eca28c4&amp;id=6fdd83df30" method="post">
-          <div class="input-group">
-            <input type="email" name="EMAIL" class="form-control" placeholder="Introduce tu dirección de correo..." required="true">
-            <span class="input-group-btn">
-            <input type="submit" class="btn btn-dark" value="Suscríbete">
-            </span>
+              <a href="https://twitter.com/tpdeoro" target="_blank">
+                <i class="is-size-8 fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/martamedio" target="_blank">
+                <i class="is-size-8 fa fa-linkedin"></i>
+              </a>
+            </div>
           </div>
+
+          <div class="column is-4 organizer">
+            <div class="organizer-content">
+              <a title="Iván González" href="https://www.linkedin.com/in/ivangonzalezsaiz" target="_blank">
+                <img src="images/organizers/Fabada-Conf-Iván.jpg" alt="Iván González">
+              </a>
+            </div>
+            <div class="organizer-links">
+              <span class="is-size-8">Iván González</span>
+
+              <a href="https://twitter.com/dreamingechoes" target="_blank">
+                <i class="is-size-8 fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/ivangonzalezsaiz" target="_blank">
+                <i class="is-size-8 fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="column is-4 organizer">
+            <div class="organizer-content">
+              <a title="Marina Vega" href="https://www.linkedin.com/in/marina-vega" target="_blank">
+                <img src="images/organizers/Fabada-Conf-Marina.jpg" alt="Marina Vega">
+              </a>
+            </div>
+            <div class="organizer-links">
+              <span class="is-size-8">Marina Vega</span>
+
+              <a href="https://twitter.com/buenapava" target="_blank">
+                <i class="is-size-8 fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/marina-vega" target="_blank">
+                <i class="is-size-8 fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="columns subscribe" id="subscribe">
+  <div class="column is-10 is-offset-1">
+
+    <div class="columns">
+      <div class="column is-6 is-size-6 is-size-7-mobile">
+        Suscríbete a nuestra newsletter
+      </div>
+
+      <div class="column is-6">
+        <form action="https://fabadaconf.us19.list-manage.com/subscribe/post?u=b200b60a95f92088e1eca28c4&amp;id=6fdd83df30" method="post" class="form">
+          <input class="input" type="email" placeholder="Introduce tu dirección de email" required="true">
+          <input type="submit" value="SUSCRÍBETE">
         </form>
       </div>
     </div>
+
   </div>
-</section>
+</div>
 
 
-    <footer>
-  <div class="container">
-    2018 © FabadaConf
-    <a href="#" class="go-top fa fa-angle-up hidden-xs hidden-ms"></a>
+      <footer>
+  <div class="columns">
+    <div class="column is-10">
+      <img src="images/logo.png">
+    </div>
+
+    <div class="column is-2">
+      <a href="/">Edición 2019</a>
+    </div>
   </div>
 </footer>
 
-
-    <script src="/javascripts/modernizr.min.js"></script>
-    <script src="/javascripts/jquery.min.js"></script>
-    <script src="/javascripts/plugins.min.js"></script>
+    </div>
     <script src="/javascripts/site.js"></script>
   </body>
 </html>

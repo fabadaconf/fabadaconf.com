@@ -6,14 +6,14 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Conferencia sobre desarrollo de software en Gijón">
     <meta name="author" content="FabadaConf">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="msapplication-TileColor" content="#fabada">
+    <meta name="theme-color" content="#fabada">
 
     <link rel="apple-touch-icon" sizes="144x144" href="images/favicon/apple-touch-icon.png">
     <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
     <link rel="manifest" href="images/favicon/site.webmanifest">
-    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#5bbad5">
+    <link rel="mask-icon" href="images/favicon/safari-pinned-tab.svg" color="#fabada">
 
     <meta property="og:title" content="FabadaConf 2019" />
     <meta property="og:image" content="images/logo.png"/>
@@ -22,179 +22,366 @@
 
     <title>FabadaConf 2019</title>
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,800" rel="stylesheet">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
 
-    <link href="/stylesheets/bootstrap-grid.css" rel="stylesheet" />
-    <link href="/stylesheets/font-awesome.css" rel="stylesheet" />
-    <link href="/stylesheets/zoomslider.css" rel="stylesheet" />
-    <link href="/stylesheets/swiper.css" rel="stylesheet" />
-    <link href="/stylesheets/swipebox.css" rel="stylesheet" />
-    <link href="/stylesheets/styles.css" rel="stylesheet" />
+    <link href="/stylesheets/site.css" rel="stylesheet" />
   </head>
 
-  <body data-spy="scroll" data-offset="120" data-target="#navbar">
-    <nav class="navbar navbar-fixed-top" id="nav-wrapper">
-  <div class="container">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle collapsed">
-      </button>
-      <a class="logo" href="/"> FabadaConf </a>
+  <body class="is-size-7">
+    <div class="container is-size-7">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a role="button" id="navbar-toggle" class="navbar-burger burger"
+       aria-label="menu" aria-expanded="false"
+       data-target="navbar-list">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbar-list" class="navbar-menu">
+    <div class="navbar-start">
+      <a class="navbar-item is-size-7" href="#about">About</a>
+      <a class="navbar-item is-size-7" href="#links">Enlaces</a>
+      <a class="navbar-item is-size-7" href="#coc">Código de Conducta</a>
+      <a class="navbar-item is-size-7" href="#sponsors">Sponsors</a>
+      <a class="navbar-item is-size-7" href="#organizers">Organizadores</a>
+      <a class="navbar-item is-size-7" href="#subscribe">Suscríbete</a>
     </div>
-    <div id="navbar" class="navbar-collapse collapse">
-      <button type="button" class="navbar-toggle collapsed">
-      </button>
+
+    <div class="navbar-end">
+      <div class="navbar-item">
+        <a class="navbar-item" href="/">
+          <img src="images/logo.png">
+        </a>
+      </div>
     </div>
   </div>
 </nav>
 
-    <section id="slider-full" class="slider-full" data-zs-bullets="false" data-zs-speed="14000" data-zs-interval="10000" data-zs-switchspeed="400" data-zs-src='["./images/slider/gijon.jpg","./images/slider/lalaboral.jpg","./images/slider/puerto.jpg"]' data-zs-overlay="false">
-  <div class="container">
-    <div class="content">
-      <div class="row">
-        <div class="col-md-2">
-          <div class="calendar">
-            <span class="day">09</span>
-            <span class="month">Nov. 2019</span>
-          </div>
-        </div>
-        <div class="col-md-10">
-          <h1> Conferencia de Software <span> en Gijón, Asturias</span></h1>
-        </div>
-      </div>
+      <div class="columns tickets">
+  <div class="column is-2 is-offset-10">
+    <a class="tickets-link is-pulled-right is-size-6"
+        href="https://ti.to/fabadaconf/2019" target="_blank">
+      ENTRADAS
+    </a>
+  </div>
+</div>
+
+<div class="columns hero">
+  <div class="column is-10 is-offset-1">
+    <h1 class="title is-size-0 is-size-3-mobile">
+      Conferencia de Software en Gijón, Asturias
+    </h1>
+  </div>
+</div>
+
+<div class="columns date">
+  <div class="column is-2">
+    <span class="date-content is-size-6">09.11.2019</a>
+  </div>
+</div>
+
+<div class="columns count-down">
+  <div class="column is-half is-offset-one-quarter days" id="count-down-days">
+  </div>
+</div>
+
+<div class="columns about" id="about">
+  <div class="column is-3">
+    <div class="info">
+      <h2 class="is-size-3">1 día</h2>
+
+      <p>Un solo día con un solo track donde establecer un punto de encuentro de la comunidad de software y comer fabada.</p>
     </div>
   </div>
-</section>
 
-<div class="time" id="time">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-3 col-sm-12">
-        <div class="header">Tiempo Restante</div>
-        ¡La cuenta atrás ha comenzado!
+  <div class="column is-3">
+    <div class="info">
+      <h2 class="is-size-3">5 ponentes</h2>
+
+      <p>Cinco ponentes invitados desde todos los puntos del país nos contarán sus experiencias y conocimientos.</p>
+    </div>
+  </div>
+
+  <div class="column is-3">
+    <div class="info">
+      <h2 class="is-size-3">120 plazas</h2>
+
+      <p>Y solo noventa tickets a la venta, de modo que si te interesa ¡corre y reserva el tuyo! Te estamos esperando.</p>
+    </div>
+  </div>
+</div>
+
+<div class="columns conference-info" id="conference-info">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+      <div class="column is-6">
+        <h2>Sobre la conferencia</h2>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <div class="days clearfix" id="daysCountDown" data-date="2019/11/09">
-        </div>
+
+      <div class="column is-6">
+        <p>
+          FabadaConf es una conferencia sin ánimo de lucro en la que se pretende establecer un punto de encuentro para la comunidad de desarrollo de software, y promover el uso y aprendizaje de nuevas tecnologías.
+        </p>
       </div>
     </div>
   </div>
 </div>
 
-<section class="about" id="about">
-  <div class="container">
-    <h3>Sobre La Conferencia</h3>
-    <p><b>​FabadaConf</b> es una conferencia sin ánimo de lucro en la que se pretende establecer un <b>punto de encuentro</b> para la comunidad de <b>desarrollo de software</b>, y promover el uso y aprendizaje de <b>nuevas tecnologías</b>.</p>
-
-    <div class="row stat" id="countUp">
-      <div class="col-md-4 col-sm-4 col-ms-4">
-        <span class="number" id="countUp-1">1</span>
-        <span class="header">Día</span>
-        <p>1 solo día con 1 sólo track donde establecer un punto de encuentro de la comunidad de software ¡y comer fabada!</p>
-      </div>
-      <div class="col-md-4 col-sm-4 col-ms-4">
-        <span class="number" id="countUp-2">5</span>
-        <span class="header">Ponentes</span>
-        <p>5 ponentes invitados desde todos los puntos del país nos contarán sus experiencias y conocimientos</p>
-      </div>
-      <div class="col-md-4 col-sm-4 col-ms-4">
-        <span class="number" id="countUp-4">100</span>
-        <span class="header">Plazas</span>
-        <p>Sólo 100 tickets a la venta, de modo que si te interesa ¡corre y reserva el tuyo! Te estamos esperando</p>
-      </div>
-    </div>
-
-    <div id="code-of-conduct">
-      <h5>CÓDIGO DE CONDUCTA</h5>
-      <p>
-        Todas las actividades de <b>​FabadaConf</b> están sujetas a nuestro <a href="https://github.com/fabadaconf/base/blob/master/files/CODE_OF_CONDUCT.md" title="Código de Conducta">Código de Conducta</a>, de modo que no te olvides de leerlo.
-      </p>
-    </div>
+<div class="columns links" id="links">
+  <div class="column is-10 is-offset-1 is-size-0 is-size-3-mobile">
+    <a target="_blank" href="https://us19.campaign-archive.com/home/?u=b200b60a95f92088e1eca28c4&id=6fdd83df30">Newsletter</a>,
+    <a target="_blank" href="https://github.com/fabadaconf">Github</a>,
+    <a target="_blank" href="https://twitter.com/fabadaconf">Twitter</a>,
+    <a target="_blank" href="https://www.linkedin.com/company/fabadaconf">LinkedIn</a>,
+    <a target="_blank" href="https://www.youtube.com/channel/UCf--4bN4vA0MQqMnpWXPm8w">Youtube</a>,
+    <a target="_blank" href="mailto:fabadaconf@gmail.com">Email</a>.
   </div>
-</section>
+</div>
 
-<section class="organizers parallax" id="organizadores">
-  <h3>Organizadores</h3>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-5th-1 col-sm-4 col-md-offset-2 col-sm-offset-0">
-        <img src="images/organizadores/martamedio.jpg" class="full-width" alt="Marta Medio">
-        <div class="name">Marta Medio</div>
-        <div class="descr">Software Developer</div>
-        <ul class="social">
-          <li><a href="https://twitter.com/tpdeoro" class="fa fa-twitter"></a></li>
-          <li><a href="https://www.linkedin.com/in/martamedio/" class="fa fa-linkedin"></a></li>
-        </ul>
+<div class="columns coc" id="coc">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+      <div class="column is-6">
+        <h2>Código de conducta</h2>
       </div>
-      <div class="col-md-5th-1 col-sm-4">
-        <img src="images/organizadores/ivangonzalez.jpg" class="full-width" alt="Iván González">
-        <div class="name">Iván González</div>
-        <div class="descr">Software Developer</div>
-        <ul class="social">
-          <li><a href="https://twitter.com/dreamingechoes" class="fa fa-twitter"></a></li>
-          <li><a href="https://www.linkedin.com/in/ivangonzalezsaiz/" class="fa fa-linkedin"></a></li>
-        </ul>
-      </div>
-      <div class="col-md-5th-1 col-sm-4">
-        <img src="images/organizadores/marinavega.jpg" class="full-width" alt="Marina Vega">
-        <div class="name">Marina Vega</div>
-        <div class="descr">Software Developer</div>
-        <ul class="social">
-          <li><a href="https://twitter.com/buenapava" class="fa fa-twitter"></a></li>
-          <li><a href="https://www.linkedin.com/in/marina-vega/" class="fa fa-linkedin"></a></li>
-        </ul>
+
+      <div class="column is-6">
+        <p>
+          Todas las actividades de FabadaConf están sujetas a nuestro <a href="https://github.com/fabadaconf/base/blob/master/files/CODE_OF_CONDUCT.md" target="_blank">Código de Conducta</a>, de modo que no te olvides de leerlo.
+        </p>
       </div>
     </div>
   </div>
-</section>
+</div>
 
+<div class="columns slider">
+  <div class="column is-10 is-offset-1">
+    <img src="images/slider/gijon.jpg" alt="Gijón"/>
+  </div>
+</div>
 
-<section id="suscribete">
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6 col-sm-12">
-        <h4>¿Quieres enterarte de todo?</h4>
-        ¡Suscríbete a nuestra newsletter para estar al día!
+<div class="columns sponsors" id="sponsors">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+
+      <div class="column is-4">
+        <h2>Sponsors</h2>
       </div>
-      <div class="col-md-6 col-sm-12">
-        <form action="https://fabadaconf.us19.list-manage.com/subscribe/post?u=b200b60a95f92088e1eca28c4&amp;id=6fdd83df30" method="post">
-          <div class="input-group">
-            <input type="email" name="EMAIL" class="form-control" placeholder="Introduce tu dirección de correo..." required="true">
-            <span class="input-group-btn">
-            <input type="submit" class="btn btn-dark" value="Suscríbete">
-            </span>
+
+      <div class="column is-8">
+
+        <div class="columns">
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="AMR Informática" href="http://tienda.amr.es/" target="_blank">
+                <img src="images/sponsors/2019AMR.png" alt="AMR Informática">
+              </a>
+            </div>
+            <p>AMR Informática</p>
           </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Kaleidos" href="https://www.kaleidos.net/" target="_blank">
+                <img src="images/sponsors/2019Kaleidos.png" alt="Kaleidos">
+              </a>
+            </div>
+            <p>Kaleidos</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Bizneo HR" href="https://www.bizneo.com/" target="_blank">
+                <img src="images/sponsors/2019Bizneo.png" alt="Bizneo HR">
+              </a>
+            </div>
+            <p>Bizneo HR</p>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Nextail" href="https://www.nextail.com/" target="_blank">
+                <img src="images/sponsors/2019Nextail.png" alt="Nextail">
+              </a>
+            </div>
+            <p>Nextail</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Empachate.com" href="https://www.empachate.com/" target="_blank">
+                <img src="images/sponsors/2019Empachate.png" alt="Empachate.com">
+              </a>
+            </div>
+            <p>Empachate.com</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Holaluz" href="https://www.holaluz.com/" target="_blank">
+                <img src="images/sponsors/2019HolaLuz.png" alt="Holaluz">
+              </a>
+            </div>
+            <p>Holaluz</p>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Empathy.co" href="https://www.empathy.co/" target="_blank">
+                <img src="images/sponsors/2019Empathy.png" alt="Empathy.co">
+              </a>
+            </div>
+            <p>Empathy.co</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Liferay" href="https://www.liferay.com/" target="_blank">
+                <img src="images/sponsors/2019Liferay.png" alt="Liferay">
+              </a>
+            </div>
+            <p>Liferay</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Sngular" href="https://www.sngular.com/" target="_blank">
+                <img src="images/sponsors/2019Sngular.png" alt="Sngular">
+              </a>
+            </div>
+            <p>Sngular</p>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Academia Arión" href="https://www.facebook.com/arionacademiagijon/" target="_blank">
+                <img src="images/sponsors/2019Arion.png" alt="Academia Arión">
+              </a>
+            </div>
+            <p>Academia Arión</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="columns organizers" id="organizers">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+
+      <div class="column is-4">
+        <h2>Organizadores</h2>
+      </div>
+
+      <div class="column is-8">
+        <div class="columns">
+          <div class="column is-4 organizer">
+            <div class="organizer-content">
+              <a title="Marta Medio" href="https://www.linkedin.com/in/martamedio" target="_blank">
+                <img src="images/organizers/Fabada-Conf-Marta.jpg" alt="Marta Medio">
+              </a>
+            </div>
+            <div class="organizer-links">
+              <span class="is-size-8">Marta Medio</span>
+
+              <a href="https://twitter.com/tpdeoro" target="_blank">
+                <i class="is-size-8 fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/martamedio" target="_blank">
+                <i class="is-size-8 fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="column is-4 organizer">
+            <div class="organizer-content">
+              <a title="Iván González" href="https://www.linkedin.com/in/ivangonzalezsaiz" target="_blank">
+                <img src="images/organizers/Fabada-Conf-Iván.jpg" alt="Iván González">
+              </a>
+            </div>
+            <div class="organizer-links">
+              <span class="is-size-8">Iván González</span>
+
+              <a href="https://twitter.com/dreamingechoes" target="_blank">
+                <i class="is-size-8 fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/ivangonzalezsaiz" target="_blank">
+                <i class="is-size-8 fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="column is-4 organizer">
+            <div class="organizer-content">
+              <a title="Marina Vega" href="https://www.linkedin.com/in/marina-vega" target="_blank">
+                <img src="images/organizers/Fabada-Conf-Marina.jpg" alt="Marina Vega">
+              </a>
+            </div>
+            <div class="organizer-links">
+              <span class="is-size-8">Marina Vega</span>
+
+              <a href="https://twitter.com/buenapava" target="_blank">
+                <i class="is-size-8 fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/marina-vega" target="_blank">
+                <i class="is-size-8 fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="columns subscribe" id="subscribe">
+  <div class="column is-10 is-offset-1">
+
+    <div class="columns">
+      <div class="column is-6 is-size-6 is-size-7-mobile">
+        Suscríbete a nuestra newsletter
+      </div>
+
+      <div class="column is-6">
+        <form action="https://fabadaconf.us19.list-manage.com/subscribe/post?u=b200b60a95f92088e1eca28c4&amp;id=6fdd83df30" method="post" class="form">
+          <input class="input" type="email" placeholder="Introduce tu dirección de email" required="true">
+          <input type="submit" value="SUSCRÍBETE">
         </form>
       </div>
     </div>
+
   </div>
-</section>
+</div>
 
 
-    <footer>
-  <div class="container">
-    <div class="row">
-      <div class="col-md-6">
-        <div class="copy"> 2019 © Fabada Conference </div>
+      <footer>
+  <div class="columns">
+    <div class="column is-10">
+      <img src="images/logo.png">
+    </div>
 
-        <ul class="icons">
-          <li><a href="https://twitter.com/fabadaconf" title="Twitter"><i class="fa fa-twitter"></i></a></li>
-          <li><a href="https://github.com/fabadaconf" title="Github"><i class="fa fa-github"></i></a></li>
-          <li><a href="https://www.youtube.com/channel/UCf--4bN4vA0MQqMnpWXPm8w" title="Youtube"><i class="fa fa-youtube-play"></i></a></li>
-          <li><a href="mailto:fabadaconf@gmail.com" title="Email"><i class="fa fa-envelope-o"></i></a></li>
-        </ul>
-      </div>
-
-      <div class="col-sm-6 text-right">
-        <a href="/2018" target="_blank">Edición 2018</a>
-      </div>
+    <div class="column is-2">
+      <a href="/2018">Edición 2018</a>
     </div>
   </div>
 </footer>
 
-
-    <script src="/javascripts/modernizr.min.js"></script>
-    <script src="/javascripts/jquery.min.js"></script>
-    <script src="/javascripts/plugins.min.js"></script>
+    </div>
     <script src="/javascripts/site.js"></script>
   </body>
 </html>
