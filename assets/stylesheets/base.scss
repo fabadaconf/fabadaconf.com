@@ -1,13 +1,16 @@
+html {
+  font-size: 24px;
+}
+
 body {
-  font-family: 'Documan Medium';
-  font-size: 16px;
   color: $black;
+  font-family: 'Documan';
 
   .input {
-    font-family: 'Documan Medium';
-    font-size: 16px;
-    color: $black;
     box-shadow: none;
+    color: $black;
+    font-family: 'Documan';
+    font-size: 0.75rem;
 
     &:active,
     &:focus,

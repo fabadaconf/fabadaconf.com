@@ -1,7 +1,6 @@
 .subscribe {
   color: $black;
   font-weight: bold;
-  font-size: 24px;
   margin: 24px 0;
 
   .column {
@@ -18,16 +17,13 @@
 
       input[type='submit'] {
         background-color: $pink;
-        color: $black;
         border: none;
-        width: 24%;
-        font-size: 14px;
-        vertical-align: top;
-        padding: 5px;
-        height: 36px;
-        font-family: 'Documan Medium';
-        font-size: 16px;
         color: $black;
+        font-family: 'Documan';
+        height: 40px;
+        padding: 5px;
+        vertical-align: top;
+        width: 24%;
       }
     }
   }

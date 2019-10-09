@@ -3,17 +3,18 @@
 @import 'vars/colors';
 @import 'vars/fonts';
 
-@import 'components/navbar';
-@import 'components/hero';
-@import 'components/countdown';
 @import 'components/about';
-@import 'components/conference_info';
-@import 'components/links';
 @import 'components/coc';
+@import 'components/conference_info';
+@import 'components/countdown';
+@import 'components/footer';
+@import 'components/hero';
+@import 'components/links';
+@import 'components/navbar';
+@import 'components/organizers';
 @import 'components/slider';
 @import 'components/sponsors';
-@import 'components/organizers';
 @import 'components/subscribe';
-@import 'components/footer';
 
 @import 'base';
+@import 'bulma_customizations';

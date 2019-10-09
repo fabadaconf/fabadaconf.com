@@ -6,17 +6,16 @@
   }
 
   > .column {
-    padding-top: 24px;
     border-top: 2px solid $black;
+    padding-top: 24px;
   }
 
   .sponsor {
-
     .sponsor-content {
-      text-align: center;
       border: 1px solid $black;
       margin: 12px 0 12px 0;
       padding: 12px;
+      text-align: center;
 
       a {
         color: $black;
@@ -26,7 +25,8 @@
         }
 
         img {
-          height: 150px;
+          max-width: 80%;
+          max-height: 150px;
         }
       }
     }

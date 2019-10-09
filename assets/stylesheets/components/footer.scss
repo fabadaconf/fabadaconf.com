@@ -1,8 +1,16 @@
 footer {
+  border-top: 1px solid $black;
   margin-top: 36px;
   padding-top: 24px;
-  border-top: 1px solid $black;
   text-align: right;
+
+  .columns {
+    .column {
+      &:first-child {
+        text-align: left;
+      }
+    }
+  }
 
   a {
     color: $black;
@@ -11,5 +19,9 @@ footer {
       color: $black;
       text-decoration: underline;
     }
+  }
+
+  img {
+    width: 130px;
   }
 }

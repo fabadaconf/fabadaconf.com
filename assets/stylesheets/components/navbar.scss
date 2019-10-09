@@ -3,11 +3,10 @@
   padding-top: 24px;
 
   .navbar-brand {
+    height: 60px;
+
     .navbar-item {
       width: 130px;
-      line-height: 1em;
-      font-weight: bold;
-      font-size: 18px;
 
       &:hover {
         color: $black;
@@ -17,21 +16,49 @@
   }
 
   .navbar-menu {
+    height: 60px;
+
     .navbar-start {
       background-color: $yellow;
+      height: 60px;
 
       .navbar-item {
-        font-weight: bold;
         border-left: 2px solid $black;
+        font-weight: bold;
 
         &:last-child {
           border-right: 2px solid $black;
         }
         &:hover {
-          color: $black;
           background-color: $yellow;
+          color: $black;
           text-decoration: underline;
         }
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .navbar {
+    padding-top: 0;
+
+    .navbar-menu {
+      .navbar-start {
+        height: initial;
+        background-color: $yellow;
+
+        .navbar-item {
+          border-left: none;
+
+          &:last-child {
+            border-right: none;
+          }
+        }
+      }
+
+      .navbar-end {
+        background-color: $white;
       }
     }
   }

@@ -3,7 +3,6 @@
     margin: 48px 0;
 
     .title {
-      font-size: 96px;
       font-weight: bold;
       line-height: 1.13;
     }
@@ -13,13 +12,12 @@
     margin: 20px 0 0 0;
 
     .tickets-link {
-      color: $black;
-      font-size: 1.6em;
-      font-weight: bold;
-      text-align: center;
-      padding: 12px;
       background-color: $green;
+      color: $black;
+      font-weight: bold;
       line-height: 1;
+      padding: 12px;
+      text-align: center;
       width: 154px;
 
       &:hover {
@@ -33,13 +31,12 @@
     margin: 0;
 
     .date-content {
-      color: $black;
-      font-size: 1.6em;
-      font-weight: bold;
-      text-align: center;
-      padding: 12px;
       background-color: $blue;
+      color: $black;
+      font-weight: bold;
       line-height: 1;
+      padding: 12px;
+      text-align: center;
       width: 152px;
     }
   }
