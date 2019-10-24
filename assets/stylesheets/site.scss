@@ -1,4 +1,4 @@
-@import 'bulma/bulma';
+
 
 @import 'vars/colors';
 @import 'vars/fonts';
@@ -16,5 +16,22 @@
 @import 'components/sponsors';
 @import 'components/subscribe';
 
-@import 'base';
-@import 'bulma_customizations';
+
+
+
+.container{
+margin: 0 17px;
+max-width:924px;
+}
+
+@media all and (min-width:768px){
+  .container{
+    margin:0 46px;
+  }
+}
+
+@media all and (min-width:1016px){
+  .container{
+    margin:0 auto;
+  }
+}

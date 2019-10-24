@@ -1,43 +1,69 @@
-.columns {
-  &.hero {
-    margin: 48px 0;
+.hero__container{
+  margin:0;
+  padding-bottom:30px;
+  position: relative;
+}
 
-    .title {
-      font-weight: bold;
-      line-height: 1.13;
-    }
+.hero__tickets {
+  background-color: $green;
+  color: $black;
+  font-family:Documan;
+  font-size:20px;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  width: 120px;
+  padding: 12px;
+  position:absolute;
+  right:0;
+  top:0;
+}
+
+.hero__tickets-link{
+  text-align: center;
+  text-decoration: none;
+  color:$black;
+}
+
+.hero__title{
+  font-family: Documan;
+  font-size:40px;
+  font-weight: bold;
+  line-height: 1.13;
+  padding:80px 10px 0 0;
+  margin-left: 20px;
+}
+
+.hero__container-date{
+  background-color: $blue;
+  color: $black;
+  font-family: Documan;
+  font-size:20px;
+  font-style: normal;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  width: 130px;
+  margin-left:20px;
+}
+
+.hero__date {
+  padding: 12px 0;
+}
+
+// Tablet
+@media all and (min-width:768px){
+  .hero__title{
+    font-size:100px;
+    font-weight: bold;
+    line-height: 1.13;
+    padding:120px 20px 0 0;
   }
+  .hero__container-date {
+    margin:120px 20px 50px;
 
-  &.tickets {
-    margin: 20px 0 0 0;
-
-    .tickets-link {
-      background-color: $green;
-      color: $black;
-      font-weight: bold;
-      line-height: 1;
-      padding: 12px;
-      text-align: center;
-      width: 154px;
-
-      &:hover {
-        color: $black;
-        text-decoration: underline;
-      }
-    }
-  }
-
-  &.date {
-    margin: 0;
-
-    .date-content {
-      background-color: $blue;
-      color: $black;
-      font-weight: bold;
-      line-height: 1;
-      padding: 12px;
-      text-align: center;
-      width: 152px;
-    }
   }
 }
+
+
+
