@@ -1,13 +1,31 @@
-.links {
+.general__links-container{
+  margin:40px 20px 50px;
+}
+
+.general__links-newsletter,
+.general__links-github,
+.general__links-linkedin,
+.general__links-youtube,
+.general__links-email {
+  text-decoration: none;
+  font-family:Documan;
+  font-size:50px;
   font-weight: bold;
-  line-height: 1.13;
-  margin-top: 48px;
-
-  a {
-    color: $black;
-
+  line-height: 1;
+  margin-bottom:0;
+  color: $black;
     &:hover {
       color: $pink;
     }
+}
+
+// tablet
+@media all and (min-width:768px){
+  .general__links-newsletter,
+  .general__links-github,
+  .general__links-linkedin,
+  .general__links-youtube,
+  .general__links-email {
+    font-size:100px;
   }
 }

@@ -31,8 +31,7 @@ if (document.getElementById('count-down-days')) {
 }
 
 const endDate = new Date('Nov 09, 2019 00:00:00').getTime();
-
-const countdowndate = () => {
+const timer = setInterval(function(){
   let now = new Date().getTime(); 
   let t = endDate - now; 
 
@@ -44,23 +43,19 @@ const countdowndate = () => {
 
     document.getElementById('timer-days').innerHTML = days + 
     "<p class='date__day'>día(s)</p>";
-    
-    document.getElementById('timer-hours').innerHTML= ("0" + hours).slice(-2) +
+
+    document.getElementById('timer-hours').innerHTML= ('0' + hours).slice(-2) +
     "<p class='date__hours'>hora(s)</p>";
     
-    document.getElementById('timer-mins').innerHTML= ("0" + mins).slice(-2) +
+    document.getElementById('timer-mins').innerHTML= ('0' + mins).slice(-2) +
     "<p class='date__mins'>mins</p>";
     
-    document.getElementById('timer-segs').innerHTML= ("0" + secs).slice(-2) +
+    document.getElementById('timer-segs').innerHTML= ('0' + secs).slice(-2) +
     "<p class='date__segs'>secs</p>";
   } else {
-    document.getElementById('timer').innerHTML = "Ha llegado el día de FabadaConf!" 
+    document.getElementById('timer').innerHTML = 'Ha llegado el día de FabadaConf!'; 
   }
-};
-
-setInterval(countdowndate, 1000);
-
-
+},1000);
 
 
 

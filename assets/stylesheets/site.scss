@@ -12,7 +12,6 @@
 @import 'components/links';
 @import 'components/navbar';
 @import 'components/organizers';
-@import 'components/slider';
 @import 'components/sponsors';
 @import 'components/subscribe';
 
@@ -22,6 +21,7 @@
 .container{
 margin: 0 17px;
 max-width:924px;
+background-color:blue;
 }
 
 @media all and (min-width:768px){

@@ -1,30 +1,77 @@
-.subscribe {
-  color: $black;
-  font-weight: bold;
-  margin: 24px 0;
+.subscribe .container {
+  background-color:$pink;
+  margin-top:50px;
+}
 
-  .column {
-    background-color: $pink;
+.subscribe__content {
+  margin: 0px 20px 40px;
+  padding-bottom:50px;
+}
 
-    .form {
-      border: 1px solid $black;
+.subscribe__content-title {
+  padding:25px 0 30px;
+}
 
-      input[type='email'] {
-        background-color: $pink;
-        border: none;
-        width: 74%;
-      }
+.subscribe__content-form {
+  border: 1px solid $black;
+  height:40px;
+}
 
-      input[type='submit'] {
-        background-color: $pink;
-        border: none;
-        color: $black;
-        font-family: 'Documan';
-        height: 40px;
-        padding: 5px;
-        vertical-align: top;
-        width: 24%;
-      }
-    }
+.subscribe__content-input {
+  background-color: #ff8fc7;
+  border: none;
+  font-family:Documan;
+  font-size:16px;
+  font-style: normal;
+  font-weight:normal;
+  color:$black;
+  opacity:0.5;
+  padding:8px 5px;
+  width:75%;
+}
+
+.subscribe__content-input_submit {
+  background-color: #ff8fc7;
+  border: none;
+  font-family:Documan;
+  font-size:12px;
+  font-style: normal;
+  font-weight:normal;
+  padding:8px 0;
+  }
+
+  // tablet
+@media all and (min-width:768px) {
+  .subscribe__content {
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    padding:0;
+    margin-top:60px;
+  }
+
+  .subscribe__content-title {
+    width:250px;
+
+  }
+  .subscribe__content-form {
+    border: 1px solid $black;
+    height:40px;
+    width:400px;
+  }
+
+}
+
+// desktop
+@media all and (min-width:1016px){
+  .subscribe__content{
+    margin-top:90px;
+  }
+
+  .subscribe__content-form {
+    border: 1px solid $black;
+    height:40px;
+    width:700px;
   }
 }
+

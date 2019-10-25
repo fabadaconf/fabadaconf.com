@@ -1,12 +1,45 @@
-.conference-info {
-  margin-top: 48px;
+.conference__info{
+  margin: 40px 0;
+}
 
-  h2 {
-    font-weight: bold;
+.conference__info .container {
+  border-top: 1.5px solid $black;
+}
+
+.conference__info-container{
+  margin: 0px 20px 60px;
+  padding-bottom:10px;
   }
 
-  > .column {
-    border-top: 2px solid $black;
-    padding-top: 24px;
+.conference__info-title {
+  margin-top:25px;
+}
+
+.conference__info-text{
+  margin-top:0;
+}
+
+// tablet
+@media all and (min-width:768px){
+ .conference__info-container {
+    display:flex;
+    justify-content: start;
+    align-items: baseline;
+  }
+
+  .conference__info-title {
+    width:550px;
+  }
+
+  .conference__info-text {
+    width:450px;
   }
 }
+
+// desktop
+@media all and (min-width:1016px){
+   .conference__info-text {
+     width:900px;
+   }
+ }
+
