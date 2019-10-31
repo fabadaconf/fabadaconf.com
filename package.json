@@ -39,6 +39,7 @@
   },
   "dependencies": {
     "bulma": "^0.7.5",
-    "countdown": "2.6.0"
+    "countdown": "2.6.0",
+    "accordion": "^3.0.2"
   }
 }

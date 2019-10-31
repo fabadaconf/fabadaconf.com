@@ -1,4 +1,5 @@
 import countdown from '../../node_modules/countdown/countdown.js';
+import accordion from '../../node_modules/accordion/src/accordion.mjs';
 
 // Navbar hambuger menu
 document.getElementById('navbar-toggle').addEventListener('click', toggleNav);
@@ -29,3 +30,7 @@ if (document.getElementById('count-down-days')) {
     },
     countdown.DAYS | countdown.HOURS | countdown.MINUTES | countdown.SECONDS);
 }
+
+// Agenda accordion
+var el = document.querySelector('.agenda-content');
+new accordion(el);
