@@ -1,5 +1,5 @@
 import countdown from '../../node_modules/countdown/countdown.js';
-import accordion from '../../node_modules/accordion/src/accordion.mjs';
+import '../../node_modules/accordion/src/accordion.js';
 
 // Navbar hambuger menu
 document.getElementById('navbar-toggle').addEventListener('click', toggleNav);
@@ -33,4 +33,4 @@ if (document.getElementById('count-down-days')) {
 
 // Agenda accordion
 var el = document.querySelector('.agenda-content');
-new accordion(el);
+new Accordion(el);
