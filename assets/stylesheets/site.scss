@@ -1,9 +1,11 @@
 @import 'bulma/bulma';
+@import 'accordion/src/accordion';
 
 @import 'vars/colors';
 @import 'vars/fonts';
 
 @import 'components/about';
+@import 'components/agenda';
 @import 'components/coc';
 @import 'components/conference_info';
 @import 'components/countdown';
