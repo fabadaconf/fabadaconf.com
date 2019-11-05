@@ -1,5 +1,11 @@
 .agenda {
   margin-top: 24px;
+
+  .avatar {
+    img {
+      max-width: 60%;
+    }
+  }
 }
 
 .accordion {
@@ -15,6 +21,10 @@
       margin: 0;
       -webkit-transition: .3s ease all;
       transition: .3s ease all;
+
+      :first-child {
+        outline: none;
+      }
     }
 
     li {
@@ -28,7 +38,7 @@
           display: block;
           font-size: 1em;
           color: $black;
-          padding: 1.25rem 1rem;
+          padding: 1rem 6rem;
           border-top: 2px solid $black;
           line-height: 1;
           text-decoration: none;
@@ -68,9 +78,18 @@
       }
 
       > .fold {
-        padding: 1em;
+        padding: 1rem 6rem;
         background: $white;
         color: foreground(#efefef, #0c5449);
+
+        a {
+          color: $black;
+          font-weight: bold;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
       }
 
       h3 {
@@ -81,6 +100,35 @@
 
       p {
         margin-bottom: 12px;
+      }
+    }
+  }
+}
+
+@media (max-width: $tablet) {
+  .agenda {
+    .avatar {
+      img {
+        max-width: 80%;
+      }
+    }
+  }
+
+  .accordion {
+    > {
+      li {
+        width: 100%;
+        position: absolute;
+
+        > {
+          a, h2 {
+            padding: 1rem;
+          }
+        }
+
+        > .fold {
+          padding: 1rem;
+        }
       }
     }
   }

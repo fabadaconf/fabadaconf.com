@@ -6,11 +6,12 @@
     height: 60px;
 
     .navbar-item {
-      width: 130px;
+      width: 200px;
+      padding-top: 0;
+      color: $black;
 
       &:hover {
         color: $black;
-        text-decoration: underline;
       }
     }
   }
@@ -18,21 +19,21 @@
   .navbar-menu {
     height: 60px;
 
-    .navbar-start {
+    .navbar-end {
       background-color: $yellow;
       height: 60px;
 
       .navbar-item {
         border-left: 2px solid $black;
         font-weight: bold;
+        color: $black;
 
         &:last-child {
           border-right: 2px solid $black;
         }
         &:hover {
-          background-color: $yellow;
+          background-color: $pink;
           color: $black;
-          text-decoration: underline;
         }
       }
     }
@@ -43,8 +44,17 @@
   .navbar {
     padding-top: 0;
 
+    .navbar-brand {
+      .navbar-item {
+        padding-top: 0.5rem;
+      }
+    }
+
     .navbar-menu {
-      .navbar-start {
+      background-color: none;
+      padding: 0;
+
+      .navbar-end {
         height: initial;
         background-color: $yellow;
 
@@ -55,10 +65,6 @@
             border-right: none;
           }
         }
-      }
-
-      .navbar-end {
-        background-color: $white;
       }
     }
   }

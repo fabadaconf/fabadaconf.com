@@ -19,7 +19,8 @@
 
     .organizer-links {
       border: 1px solid $black;
-      padding: 0px 0px 0px 8px;
+      padding: 4px 0px 4px 4px;
+      font-size: 0.5rem;
 
       &:hover {
         background-color: $yellow;
@@ -29,7 +30,8 @@
         border-left: 1px solid $black;
         color: $black;
         float: right;
-        padding: 0 8px;
+        padding: 4px 6px;
+        margin-top: -4px;
 
         &:hover {
           background-color: $pink;
