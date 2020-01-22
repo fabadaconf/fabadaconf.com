@@ -1,0 +1,663 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Conferencia sobre desarrollo de software en Gijón">
+    <meta name="author" content="FabadaConf">
+    <meta name="msapplication-TileColor" content="#fabada">
+    <meta name="theme-color" content="#fabada">
+
+    <link rel="apple-touch-icon" sizes="144x144" href="/images/favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon/favicon-16x16.png">
+    <link rel="manifest" href="/images/favicon/site.webmanifest">
+    <link rel="mask-icon" href="/images/favicon/safari-pinned-tab.svg" color="#fabada">
+
+    <meta property="og:title" content="FabadaConf 2019" />
+    <meta property="og:image" content="http://www.fabadaconf.com/images/logo.png"/>
+    <meta property="og:description" content="Fabada Conference: Xixón 2019" />
+    <meta property="og:url" content="http://www.fabadaconf.com"/>
+
+    <title>FabadaConf 2019</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+          rel="stylesheet"
+          integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN"
+          crossorigin="anonymous">
+
+    <link href="/stylesheets/site.css" rel="stylesheet" />
+  </head>
+
+  <body class="is-size-7">
+    <div class="container is-size-7">
+      <nav class="navbar" role="navigation" aria-label="main navigation">
+  <div class="navbar-brand">
+    <a class="navbar-item" href="/" title="FabadaConf 2019">
+      <img src="/images/logo.png">
+    </a>
+
+    <a role="button" id="navbar-toggle" class="navbar-burger burger"
+       aria-label="menu" aria-expanded="false"
+       data-target="navbar-list">
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+      <span aria-hidden="true"></span>
+    </a>
+  </div>
+
+  <div id="navbar-list" class="navbar-menu">
+    <div class="navbar-end">
+      <a class="navbar-item is-size-7" href="#coc">Código de Conducta</a>
+      <a class="navbar-item is-size-7" href="#agenda">Agenda</a>
+      <a class="navbar-item is-size-7" href="#sponsors">Sponsors</a>
+      <a class="navbar-item is-size-7" href="#organizers">Organizadores</a>
+      <a class="navbar-item is-size-7" href="#subscribe">Suscríbete</a>
+    </div>
+  </div>
+</nav>
+
+      <div class="columns hero">
+  <div class="column is-10 is-offset-1">
+    <h1 class="title is-size-0 is-size-3-mobile">
+      Conferencia de Software en Gijón, Asturias
+    </h1>
+  </div>
+</div>
+
+<div class="columns date">
+  <div class="column is-2">
+    <span class="date-content is-size-6">09.11.2019</a>
+  </div>
+</div>
+
+<div class="columns count-down">
+  <div class="column is-half is-offset-one-quarter days" id="count-down-days">
+  </div>
+</div>
+
+<div class="columns about" id="about">
+  <div class="column is-3">
+    <div class="info">
+      <h2 class="is-size-3">1 día</h2>
+
+      <p>Un solo día con un solo track donde establecer un punto de encuentro de la comunidad de software y comer fabada.</p>
+    </div>
+  </div>
+
+  <div class="column is-3">
+    <div class="info">
+      <h2 class="is-size-3">5 ponentes</h2>
+
+      <p>Cinco ponentes invitados desde todos los puntos del país nos contarán sus experiencias y conocimientos.</p>
+    </div>
+  </div>
+
+  <div class="column is-3">
+    <div class="info">
+      <h2 class="is-size-3">120 plazas</h2>
+
+      <p>Y solo noventa tickets a la venta, de modo que si te interesa ¡corre y reserva el tuyo! Te estamos esperando.</p>
+    </div>
+  </div>
+</div>
+
+<div class="columns conference-info" id="conference-info">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+      <div class="column is-6">
+        <h2>Sobre la conferencia</h2>
+      </div>
+
+      <div class="column is-6">
+        <p>
+          FabadaConf es una conferencia sin ánimo de lucro en la que se pretende establecer un punto de encuentro para la comunidad de desarrollo de software, y promover el uso y aprendizaje de nuevas tecnologías.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="columns links" id="links">
+  <div class="column is-10 is-offset-1 is-size-0 is-size-3-mobile">
+    <a target="_blank" href="https://us19.campaign-archive.com/home/?u=b200b60a95f92088e1eca28c4&id=6fdd83df30">Newsletter</a>,
+    <a target="_blank" href="https://github.com/fabadaconf">Github</a>,
+    <a target="_blank" href="https://twitter.com/fabadaconf">Twitter</a>,
+    <a target="_blank" href="https://www.linkedin.com/company/fabadaconf">LinkedIn</a>,
+    <a target="_blank" href="https://www.youtube.com/channel/UCf--4bN4vA0MQqMnpWXPm8w">Youtube</a>,
+    <a target="_blank" href="mailto:fabadaconf@gmail.com">Email</a>.
+  </div>
+</div>
+
+<div class="columns coc" id="coc">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+      <div class="column is-6">
+        <h2>Código de conducta</h2>
+      </div>
+
+      <div class="column is-6">
+        <p>
+          Todas las actividades de FabadaConf están sujetas a nuestro <a href="https://github.com/fabadaconf/base/blob/master/files/CODE_OF_CONDUCT.md" target="_blank">Código de Conducta</a>, de modo que no te olvides de leerlo.
+        </p>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="columns slider">
+  <div class="column is-10 is-offset-1">
+    <img src="/images/slider/gijon.jpg" alt="Gijón"/>
+  </div>
+</div>
+
+<div class="columns agenda" id="agenda">
+  <ul class="column is-10 is-offset-1 agenda-content">
+    <li>
+      <a href="#panel1">
+        <div class="columns">
+          <div class="column is-4">
+            <h2><b>8:45 h - 9:15 h</b></h2>
+          </div>
+          <div class="column is-8">
+            <p>Check-in y bienvenida</p>
+          </div>
+        </div>
+      </a>
+      <div id="panel1" class="fold">
+        <p>
+          A las <b>8:45 h</b> abriremos puertas y comenzaremos a daros paso a la sala de la conferencia. A las <b>9:15 h</b> arrancará el evento con una pequeña presentación, comentando cómo va a discurrir el día y compartiendo otros detalles.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <a href="#panel2">
+        <div class="columns">
+          <div class="column is-4">
+            <h2><b>9:30 h - 10:15 h</b></h2>
+          </div>
+          <div class="column is-8">
+            <p>Teresa de la Torre</p>
+          </div>
+        </div>
+      </a>
+      <div id="panel2" class="fold">
+        <h3>El hombre pisó la luna, pero gracias a la mujer</h3>
+        <p>
+          En los libros de historia, ciencia, arte o literatura, la mujer siempre ha tenido un papel secundario o a veces inexistente y muchas figuras importantes han quedado ocultas para el conocimiento popular. En la rama tecnológica esto no ha sido diferente, ya que siempre se ha entendido que la tecnología es cosa de hombres pero ¡nada más lejos de la realidad!
+        </p>
+        <p>
+          Teresa nos va a enseñar cómo la tecnología no sería lo que es sin la crucial aportación de diferentes mujeres a lo largo de nuestra evolución.
+        </p>
+        <h3>Teresa de la Torre</h3>
+        <p>
+          <a class="avatar" title="Teresa de la Torre" href="https://twitter.com/tdelatorreh" target="_blank">
+            <img src="/images/2019/speakers/Fabada-Conf-2.jpg" alt="Teresa de la Torre">
+          </a>
+        </p>
+        <p>
+          Una de las fundadoras de <a href="https://kaleidos.net/" title="Kaleidos" target="_blank">Kaleidos</a>, donde trabaja como desarrolladora en Python y ahora también como front-end en diferentes frameworks y lenguajes. También es co-fundadora de <a href="https://taiga.io/" title="Taiga.io" target="_blank">Taiga.io</a>.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <a href="#panel2">
+        <div class="columns">
+          <div class="column is-4">
+            <h2><b>10:20 h - 11:05 h</b></h2>
+          </div>
+          <div class="column is-8">
+            <p>Ricard Solé</p>
+          </div>
+        </div>
+      </a>
+      <div id="panel2" class="fold">
+        <h3>Alternativas consideradas</h3>
+        <p>
+          Normalmente, a la hora de programar sabemos en qué dirección queremos ir en el momento de escribir nuestro código, en esta charla Ricard ahondará en la importancia que tiene documentar y debatir por qué escoger una dirección u otra, y nos ayudará a reflexionar para saber cómo pueden ayudarnos a mejorar nuestra solución aquellos caminos alternativos que se nos han presentado y que hemos descartado.
+        </p>
+        <h3>Ricard Solé</h3>
+        <p>
+          <a class="avatar" title="Ricard Solé" href="https://twitter.com/_rcsole" target="_blank">
+            <img src="/images/2019/speakers/Fabada-Conf-1.jpg" alt="Ricard Solé">
+          </a>
+        </p>
+        <p>
+          Es originario de Barcelona, donde comenzó su carrera como desarrollador para <a href="https://www.xing.com/" title="XING" target="_blank">XING</a>, aunque viajará a Asturias para ser ponente de la FabadaConf directamente desde Londres, donde lleva trabajando varios años para uno de los grandes: <b>Google</b>.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <a href="#panel3">
+        <div class="columns">
+          <div class="column is-4">
+            <h2><b>11:05 h - 11:50 h</b></h2>
+          </div>
+          <div class="column is-8">
+            <p>Mavi Jiménez</p>
+          </div>
+        </div>
+      </a>
+      <div id="panel3" class="fold">
+        <h3>Developer Experience</h3>
+        <p>
+          Los perfiles especializados en construir experiencias de usuario están muy asentados en la comunidad de software, queremos que el usuario quede maravillado y use nuestra aplicación. Si tan claro vemos ese caso de uso... ¿por qué no nos planteamos seriamente lo mismo para las personas que programan?
+        </p>
+        <p>
+          Programar esa misma aplicación debería ser tan placentero como usarla. Nos hablará de cómo diseñar y pensar las metodologías de software desde el punto de vista de la figura del programador, ya que está más tiempo lidiando con la aplicación, ¡incluso más que el usuario final!
+        </p>
+        <h3>Mavi Jiménez</h3>
+        <p>
+          <a class="avatar" title="Mavi Jiménez" href="https://twitter.com/Linkita" target="_blank">
+            <img src="/images/2019/speakers/Fabada-Conf-3.jpg" alt="Mavi Jiménez">
+          </a>
+        </p>
+        <p>
+          Además de ingeniera informática, es graduada en Bellas Artes y cuenta con más de diez años de experiencia en nuestro sector. Tras una larga temporada en <a href="https://www.trovit.es/" title="Trovit" target="_blank">Trovit</a>, actualmente forma parte del equipo de ingeniería de <a href="https://www.holaluz.com/" title="HolaLuz" target="_blank">HolaLuz</a> y es una de las impulsoras de <a href="https://www.womenwhocode.com/barcelona" title="Women Who Code Barcelona" target="_blank">Women Who Code Barcelona</a>, una organización sin ánimo de lucro que lucha por acabar con los estereotipos de género en el mundo de la tecnología.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <a href="#panel4">
+        <div class="columns">
+          <div class="column is-4">
+            <h2><b>11:50 h - 12:20 h</b></h2>
+          </div>
+          <div class="column is-8">
+            <p>Parada café + Networking</p>
+          </div>
+        </div>
+      </a>
+      <div id="panel4" class="fold">
+        <p>
+          Tras las primeras tres charlas, haremos un parón para tomar un café y poder hacer un poco de networking entre les asistentes a la conferencia.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <a href="#panel5">
+        <div class="columns">
+          <div class="column is-4">
+            <h2><b>12:25 h - 13:10 h</b></h2>
+          </div>
+          <div class="column is-8">
+            <p>Naiara Abaroa</p>
+          </div>
+        </div>
+      </a>
+      <div id="panel5" class="fold">
+        <h3>The Gold Rush [Reloaded]: What is new in CSS</h3>
+        <p>
+          En esta fiebre de sentir que estamos creando y desarrollando la web con cada trabajo que hacemos, cada vez necesitamos ir un poquito más allá con nuestro código. Por eso Naiara hará un repaso de las nuevas features CSS en las que está trabajando el W3C y que ya se pueden utilizar o se utilizarán en un futuro cercano. ¡No hay evolución ni cambio sin vanguardia!
+        </p>
+        <h3>Naiara Abaroa</h3>
+        <p>
+          <a class="avatar" title="Naiara Abaroa" href="https://twitter.com/nabaroa" target="_blank">
+            <img src="/images/2019/speakers/Fabada-Conf-4.jpg" alt="Naiara Abaroa">
+          </a>
+        </p>
+        <p>
+          Maquetadora y toda una experta en el desarrollo de interfaces de usuario. Cuenta con casi 20 años de experiencia profesional en nuestro sector y actualmente forma parte de los equipos de Organic Growth y Design System de <a href="https://www.transferwise.com/" title="TransferWise" target="_blank">TransferWise</a>.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <a href="#panel6">
+        <div class="columns">
+          <div class="column is-4">
+            <h2><b>13:15 h - 14:00 h</b></h2>
+          </div>
+          <div class="column is-8">
+            <p>Manuel Cernuda</p>
+          </div>
+        </div>
+      </a>
+      <div id="panel6" class="fold">
+        <h3>Cómo hemos cambiado...</h3>
+        <p>
+          Todo un viaje en el tiempo donde analizará, al estilo de Carl Sagan, como han ido cambiando las tecnologías y los proyectos a lo largo de los últimos quince años dentro del mundo del desarrollo de software. Una charla apta para nostálgicos, ¡aunque desde la organización no nos hacemos responsables de lo mayores que os podáis sentir al escucharla!
+        </p>
+        <h3>Manuel Cernuda</h3>
+        <p>
+          <a class="avatar" title="Manuel Cernuda" href="https://twitter.com/manuelcernuda" target="_blank">
+            <img src="/images/2019/speakers/Fabada-Conf-5.jpg" alt="Manuel Cernuda">
+          </a>
+        </p>
+        <p>
+          Cuenta con más de 15 años de experiencia en la industria tecnológica, desarrollando todo tipo de proyectos, y es uno de los principales referentes de nuestra región en el framework .NET de Microsoft. Actualmente es Senior Technical Manager en la oficina de <a href="https://www.sngular.com/" title="Sngular" target="_blank">Sngular</a> de Oviedo, donde realiza desde labores de gestión a la toma de decisiones de arquitectura técnica.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <a href="#panel7">
+        <div class="columns">
+          <div class="column is-4">
+            <h2><b>14:00 h - 14:30 h</b></h2>
+          </div>
+          <div class="column is-8">
+            <p>Cierre de la Organización</p>
+          </div>
+        </div>
+      </a>
+      <div id="panel7" class="fold">
+        <p>
+          A esta hora todes tendremos mucha hambre, de modo que haremos un pequeño cierre de conferencia, y con la mente bien alimentada de conocimientos, iremos a alimentar el estómago con una buena fabada como fin de fiesta.
+        </p>
+      </div>
+    </li>
+
+    <li>
+      <a href="#panel8">
+        <div class="columns">
+          <div class="column is-4">
+            <h2><b>14:30 h - 15:30 h</b></h2>
+          </div>
+          <div class="column is-8">
+            <p>Degustación de Fabada + Networking</p>
+          </div>
+        </div>
+      </a>
+      <div id="panel8" class="fold">
+        <p>Fabes for diversity.</p>
+      </div>
+    </li>
+  </ul>
+</div>
+
+<div class="columns sponsors" id="sponsors">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+
+      <div class="column is-4">
+        <h2>Sponsors</h2>
+      </div>
+
+      <div class="column is-8">
+
+        <div class="columns">
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="AMR Informática" href="http://tienda.amr.es/" target="_blank">
+                <img src="/images/2019/sponsors/2019AMR.png" alt="AMR Informática">
+              </a>
+            </div>
+            <p>AMR Informática</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Kaleidos" href="https://www.kaleidos.net/" target="_blank">
+                <img src="/images/2019/sponsors/2019Kaleidos.png" alt="Kaleidos">
+              </a>
+            </div>
+            <p>Kaleidos</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Bizneo HR" href="https://www.bizneo.com/" target="_blank">
+                <img src="/images/2019/sponsors/2019Bizneo.png" alt="Bizneo HR">
+              </a>
+            </div>
+            <p>Bizneo HR</p>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Nextail" href="https://nextail.co/" target="_blank">
+                <img src="/images/2019/sponsors/2019Nextail.png" alt="Nextail">
+              </a>
+            </div>
+            <p>Nextail</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Empachate.com" href="https://www.empachate.com/" target="_blank">
+                <img src="/images/2019/sponsors/2019Empachate.png" alt="Empachate.com">
+              </a>
+            </div>
+            <p>Empachate.com</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Holaluz" href="https://www.holaluz.com/" target="_blank">
+                <img src="/images/2019/sponsors/2019HolaLuz.png" alt="Holaluz">
+              </a>
+            </div>
+            <p>Holaluz</p>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Empathy.co" href="https://www.empathy.co/" target="_blank">
+                <img src="/images/2019/sponsors/2019Empathy.png" alt="Empathy.co">
+              </a>
+            </div>
+            <p>Empathy.co</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Liferay" href="https://www.liferay.com/" target="_blank">
+                <img src="/images/2019/sponsors/2019Liferay.png" alt="Liferay">
+              </a>
+            </div>
+            <p>Liferay</p>
+          </div>
+
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Sngular" href="https://www.sngular.com/" target="_blank">
+                <img src="/images/2019/sponsors/2019Sngular.png" alt="Sngular">
+              </a>
+            </div>
+            <p>Sngular</p>
+          </div>
+        </div>
+
+        <div class="columns">
+          <div class="column is-4 sponsor">
+            <div class="sponsor-content">
+              <a title="Academia Arión" href="https://www.facebook.com/arionacademiagijon/" target="_blank">
+                <img src="/images/2019/sponsors/2019Arion.png" alt="Academia Arión">
+              </a>
+            </div>
+            <p>Academia Arión</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="columns organizers" id="organizers">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+
+      <div class="column is-4">
+        <h2>Organizadores</h2>
+      </div>
+
+      <div class="column is-8">
+        <div class="columns">
+          <div class="column is-4 organizer">
+            <div class="organizer-content">
+              <a title="Marta Medio" href="https://www.linkedin.com/in/martamedio" target="_blank">
+                <img src="/images/organizers/Fabada-Conf-Marta.jpg" alt="Marta Medio">
+              </a>
+            </div>
+            <div class="organizer-links">
+              <span>Marta Medio</span>
+
+              <a href="https://twitter.com/tpdeoro" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/martamedio" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="column is-4 organizer">
+            <div class="organizer-content">
+              <a title="Iván González" href="https://www.linkedin.com/in/ivangonzalezsaiz" target="_blank">
+                <img src="/images/organizers/Fabada-Conf-Iván.jpg" alt="Iván González">
+              </a>
+            </div>
+            <div class="organizer-links">
+              <span>Iván González</span>
+
+              <a href="https://twitter.com/dreamingechoes" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/ivangonzalezsaiz" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="column is-4 organizer">
+            <div class="organizer-content">
+              <a title="Marina Vega" href="https://www.linkedin.com/in/marina-vega" target="_blank">
+                <img src="/images/organizers/Fabada-Conf-Marina.jpg" alt="Marina Vega">
+              </a>
+            </div>
+            <div class="organizer-links">
+              <span>Marina Vega</span>
+
+              <a href="https://twitter.com/buenapava" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/marina-vega" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="columns collaborators" id="collaborators">
+  <div class="column is-10 is-offset-1">
+    <div class="columns">
+
+      <div class="column is-4">
+        <h2>Diseño, ilustración y maquetación</h2>
+      </div>
+
+      <div class="column is-8">
+        <div class="columns">
+          <div class="column is-4 collaborator">
+            <div class="collaborator-content">
+              <a title="Rafa Garcés" href="https://twitter.com/rafagarces" target="_blank">
+                <img src="/images/2019/collaborators/Fabada-Conf-Rafa.jpg" alt="Rafa Garcés">
+              </a>
+            </div>
+            <div class="collaborator-links">
+              <span>Rafa Garcés</span>
+
+              <a href="https://twitter.com/rafagarces" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/rafagarces/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="column is-4 collaborator">
+            <div class="collaborator-content">
+              <a title="Marian Vencesla" href="https://twitter.com/MarianVencesla" target="_blank">
+                <img src="/images/2019/collaborators/Fabada-Conf-Marian.jpeg" alt="Marian Vencesla">
+              </a>
+            </div>
+            <div class="collaborator-links">
+              <span>Marian Vencesla</span>
+
+              <a href="https://twitter.com/MarianVencesla" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/mvencesla/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="column is-4 collaborator">
+            <div class="collaborator-content">
+              <a title="Bea Pascual" href="https://www.linkedin.com/in/beatrizpascualsanchez/" target="_blank">
+                <img src="/images/2019/collaborators/Fabada-Conf-Bea.jpg" alt="Bea Pascual">
+              </a>
+            </div>
+            <div class="collaborator-links">
+              <span>Bea Pascual</span>
+
+              <a href="https://twitter.com/BeatrizPascualS" target="_blank">
+                <i class="fa fa-twitter"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/beatrizpascualsanchez/" target="_blank">
+                <i class="fa fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</div>
+
+<div class="columns subscribe" id="subscribe">
+  <div class="column is-10 is-offset-1">
+
+    <div class="columns">
+      <div class="column is-6 is-size-6 is-size-7-mobile">
+        Suscríbete a nuestra newsletter
+      </div>
+
+      <div class="column is-6">
+        <form action="https://fabadaconf.us19.list-manage.com/subscribe/post?u=b200b60a95f92088e1eca28c4&amp;id=6fdd83df30" method="post" class="form">
+          <input class="input" type="email" placeholder="Introduce tu dirección de email" required="true">
+          <input type="submit" value="SUSCRÍBETE">
+        </form>
+      </div>
+    </div>
+
+  </div>
+</div>
+
+
+      <footer>
+  <div class="columns">
+    <div class="column is-10">
+      <img src="/images/logo.png">
+    </div>
+
+    <div class="column is-2">
+      <a href="/2018">2018</a> · <a href="/">2020</a>
+    </div>
+  </div>
+</footer>
+
+    </div>
+    <script src="/javascripts/site.js"></script>
+  </body>
+</html>
