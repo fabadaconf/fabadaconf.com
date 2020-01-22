@@ -25,5 +25,6 @@ configure :build do
   activate :minify_javascript
 end
 
-# Config for 2018 site
+# Config for old sites
 page '/2018/*', :layout => '2018'
+page '/2019/*', :layout => '2019'

@@ -24,7 +24,7 @@ countdown.setLabels(
 
 if (document.getElementById('count-down-days')) {
   countdown(
-    new Date(2019, 10, 9),
+    new Date(2020, 10, 7),
     function (ts) {
       document.getElementById('count-down-days').innerHTML = ts.toHTML('strong');
     },
