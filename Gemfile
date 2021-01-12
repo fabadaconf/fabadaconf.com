@@ -14,6 +14,6 @@ gem 'sass-rails'
 gem 'builder', '~> 3.2.3'
 
 gem 'middleman-syntax', '~> 3.0.0'
-gem 'redcarpet', '~> 3.4.0'
+gem 'redcarpet', '~> 3.5.1'
 
 gem 'middleman-gh-pages'
